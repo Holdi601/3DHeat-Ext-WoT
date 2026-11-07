@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heat3d-ext-wot"
+version = "0.1.0"
+description = "World of Tanks replays (.wotreplay) into 3DHeat tables: every position over time, every kill where it happened"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pyarrow>=15"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+heat3d-wot-replay = "heat3d_ext_wot.cli:main"
+
+[tool.setuptools]
+packages = ["heat3d_ext_wot", "heat3d_update"]
