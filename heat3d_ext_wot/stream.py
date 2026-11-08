@@ -248,6 +248,27 @@ class Hit:
     factor: int
     #: The damage it did (2.x, which says so), else None.
     damage: int | None = None
+    #: Each point struck as sent (8 bytes in 1.x, 16 in 2.x) - `hit_point` reads them.
+    raw: list[bytes] = field(default_factory=list)
+
+
+def hit_point(raw: bytes) -> dict[str, Any] | None:
+    """
+    One struck point: the vehicle part's collision component (its index),
+    a code, and where the shell went in and where its path ended, each a
+    point of 8 bits an axis inside the component's bounding box (0 its
+    least, 255 its most: u across, v up, w along, as the box's own x, y, z).
+    1.x sends these 8 bytes alone; 2.x the same 8 after four zero bytes,
+    and three more bytes after them (`extra`, not known).
+    """
+    if len(raw) == 16:
+        body, extra = raw[4:12], raw[12:15].hex()
+    elif len(raw) == 8:
+        body, extra = raw, ""
+    else:
+        return None
+    return {"component": body[0], "code": body[1], "entry": tuple(b / 255 for b in body[2:5]),
+            "exit": tuple(b / 255 for b in body[5:8]), "extra": extra}
 
 
 def _hits(groups: dict, roster: set[int], dec: Decoded, health_m: int | None) -> None:
@@ -273,8 +294,9 @@ def _hits(groups: dict, roster: set[int], dec: Decoded, health_m: int | None) ->
                     # 2.x: effects index, a byte, the damage uint32, ...; 1.x: effects index, damage factor.
                     damage = struct.unpack_from("<I", c.args, at + 2)[0] if tail >= 6 else None
                     factor = c.args[at + 1] if tail < 6 else int(bool(damage))
+                    raw = [bytes(c.args[5 + i * size: 5 + (i + 1) * size]) for i in range(c.args[4])]
                     dec.hits.append(Hit(c.time, c.entity, struct.unpack_from("<I", c.args)[0], c.args[4], c.args[at],
-                                        factor, damage))
+                                        factor, damage, raw))
                 return
 
 

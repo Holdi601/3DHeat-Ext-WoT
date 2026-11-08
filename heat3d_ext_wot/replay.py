@@ -44,7 +44,10 @@ from typing import Any
 import numpy as np
 
 from . import bigworld as bw
+from . import kept
+from . import sidecar as sc
 from . import stream as st
+from .table import slug
 
 #: The key World of Tanks enciphers its replays' packet streams with, as the
 #: community tools that read them have published since 2013.
@@ -73,7 +76,8 @@ HINTS = {
         "dirY": "dirY",
         "dirZ": "dirZ",
         "extra": ["event", "vehicle", "type", "own", "battleTime", "other", "reason", "map", "value", "health",
-                  "text", "turretYaw", "gunStep", "shot"],
+                  "text", "turretYaw", "gunStep", "shot", "hitComponent", "hitCode", "hitU", "hitV", "hitW",
+                  "hitExitU", "hitExitV", "hitExitW", "hitDirX", "hitDirY", "hitDirZ"],
     },
 }
 
@@ -84,7 +88,15 @@ COLUMNS = {
     "x": "f", "y": "f", "z": "f", "dirX": "f", "dirY": "f", "dirZ": "f",
     "other": "s", "reason": "s", "entity": "l",
     "value": "f", "health": "f", "text": "s", "turretYaw": "f", "gunStep": "i", "shot": "l",
+    "hitComponent": "i", "hitCode": "i", "hitU": "f", "hitV": "f", "hitW": "f",
+    "hitExitU": "f", "hitExitV": "f", "hitExitW": "f", "hitDirX": "f", "hitDirY": "f", "hitDirZ": "f",
 }  # fmt: skip
+
+#: A position's pitch and roll as the packet has them, radians: pitch positive nose down, roll as sent. Checked
+#: against the ground (see the README): the pitch is minus the slope the vehicle climbs; two vehicles at one spot
+#: with one heading have the same roll, with opposite headings opposite rolls.
+COLUMNS.update(pitch="f", roll="f")
+HINTS["columns"]["extra"] += ["pitch", "roll"]
 
 #: The game's attack reasons (the `reason` of a health change and of a death), as far as they are known for
 #: certain; other numbers are written as they are.
@@ -100,6 +112,8 @@ class Match:
     map: str
     rows: dict[str, list] = field(default_factory=lambda: {c: [] for c in COLUMNS})
     summary: dict[str, Any] = field(default_factory=dict)
+    #: The sidecar `<match>.messages.parquet`: everything not held whole by the table and the summary (Arrow).
+    messages: Any = None
 
     def add(self, **row: Any) -> None:
         for c in COLUMNS:
@@ -239,6 +253,7 @@ def read(buf: bytes, name: str = "replay") -> Match:
         kills.append(kill)
 
     # Positions, until a vehicle's death, with the turret's yaw and the gun's elevation step.
+    in_table: set[int] = set()  # the position packets that are rows (by offset), for the completeness count
     for vid, t in sorted(tracks.items()):
         w = who(vid)
         end = deaths.get(vid, math.inf)
@@ -252,10 +267,12 @@ def read(buf: bytes, name: str = "replay") -> Match:
             codes = gc[np.clip(j, 0, None)]
             turret = np.where(j >= 0, ((codes >> 6) & 1023) * 2 * np.pi / 1024 - np.pi, np.nan)
             step = np.where(j >= 0, codes & 63, np.nan)
+        pitch, roll = t.pitch[keep], t.roll[keep]
+        in_table.update(t.offset[keep].tolist())
         for k, (tt, x, y, z, yaw) in enumerate(zip(times, t.x[keep], t.y[keep], t.z[keep], t.yaw[keep])):
             m.add(match=match_id, map=map_id, time=float(tt), battleTime=_bt(tt, start), event="position",
                   x=x, y=y, z=z, dirX=math.sin(yaw), dirY=0.0, dirZ=math.cos(yaw), turretYaw=turret[k],
-                  gunStep=step[k], **w)
+                  gunStep=step[k], pitch=pitch[k], roll=roll[k], **w)
 
     # Each death twice, as the 3DHeat CS2 tables have it: "death" where the victim fell, "kill" where the killer stood.
     for vid, r in vres.items():
@@ -293,8 +310,33 @@ def read(buf: bytes, name: str = "replay") -> Match:
             dmg = x.damage
         else:
             dmg = changes.get((round(x.time, 1), x.victim), 0) if x.factor else 0
-        add("struck", x.time, x.victim, where(x.victim, x.time), other=label(x.attacker), value=dmg,
-            text=f"effects {x.effects}, {x.points} point(s)")
+        # One row a point struck: the part's collision component, a code, where the shell went in and where
+        # its path ended, as fractions of the component's box (`stream.hit_point`); the damage on the first.
+        points = [p for p in (st.hit_point(r) for r in x.raw) if p is not None] or [None]
+        # The victim's turret then (a turret or gun component's box turns with it), and the way the shell came
+        # in the hull's frame (x forward, y up, z right), from the attacker's place: the hull's yaw turns it.
+        turret, came = None, {}
+        if x.victim in dec.guns:
+            gt, gc = dec.guns[x.victim]
+            j = int(np.searchsorted(gt, x.time, side="right")) - 1
+            turret = st.gun_yaw(int(gc[j])) if j >= 0 else None
+        vi = _fresh(tracks.get(x.victim), x.time)
+        ap = where(x.attacker, x.time)
+        if vi is not None and ap is not None:
+            vt = tracks[x.victim]
+            dx, dy, dz = float(vt.x[vi]) - ap[0], float(vt.y[vi]) - ap[1], float(vt.z[vi]) - ap[2]
+            n = math.sqrt(dx * dx + dy * dy + dz * dz)
+            if n > 0:
+                yaw = float(vt.yaw[vi])
+                came = dict(hitDirX=(dx * math.sin(yaw) + dz * math.cos(yaw)) / n, hitDirY=dy / n,
+                            hitDirZ=(dx * math.cos(yaw) - dz * math.sin(yaw)) / n)
+        for k, p in enumerate(points):
+            at = {} if p is None else dict(hitComponent=p["component"], hitCode=p["code"], hitU=p["entry"][0],
+                                           hitV=p["entry"][1], hitW=p["entry"][2], hitExitU=p["exit"][0],
+                                           hitExitV=p["exit"][1], hitExitW=p["exit"][2])
+            add("struck", x.time, x.victim, where(x.victim, x.time), other=label(x.attacker),
+                value=dmg if k == 0 else None, text=f"effects {x.effects}, point {k + 1} of {x.points}",
+                turretYaw=turret, **at, **came)
 
     # Shots, tracers and explosions. A shot's direction is its tracer's, else the hull's and turret's.
     by_shooter: dict[int, list[st.Tracer]] = {}
@@ -450,6 +492,17 @@ def read(buf: bytes, name: str = "replay") -> Match:
         "resultVehicles": end_roster or None,
         "frags": frags or None,
     }  # fmt: skip
+    # Everything else, whole, in the sidecar; what became of each kind of item in `selfCheck.completeness`.
+    led, entities, entity_check = kept.ledger(rep, idx, dec, set(roster), kind, in_table)
+    for i in range(len(rep.raw_blocks)):
+        led.block(i, False, "header" if i == 0 else "results" if i == 1 else "")
+    version = sc.version(led)
+    m.summary["streamVersion"] = version
+    m.summary["entities"] = entities
+    m.messages, completeness = led.build(f"{slug(match_id)}.{sc.WHAT}.parquet")
+    m.summary.setdefault("selfCheck", {}).update(
+        completeness=completeness, entities=entity_check,
+        streamVersionAgrees=None if version is None else version == _version(head) or version.startswith(_version(head)))
     return m
 
 

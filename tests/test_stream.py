@@ -75,7 +75,7 @@ def stream() -> bytes:
             if i < 120:
                 new = health - 400
                 out += call(8, t + 0.05, ENEMY, HEALTH, struct.pack("<hhIBb", new, health, ME, 0, -1))
-                out += call(8, t + 0.05, ENEMY, HITS, struct.pack("<IB", ME, 1) + bytes(16)
+                out += call(8, t + 0.05, ENEMY, HITS, struct.pack("<IB", ME, 1) + POINT
                             + bytes([0x22, 3]) + struct.pack("<I", 400) + bytes(7))
                 health = new
             else:
@@ -127,6 +127,23 @@ def test_health_changes_are_hurt_and_damage_rows():
     assert kill["time"] == pytest.approx(13.0) and kill["timeFrom"] == "health"
     foe = [p for p in m.summary["players"] if p["name"] == "foe"][0]
     assert foe["seen"]["damageReceived"] == 2000
+
+
+#: A struck point as 2.x sends it: four zero bytes, the component (4), a code (1), the entry (middle across, a
+#: third up, the front face) and where the path ended (further in, lower), three more bytes, a zero.
+POINT = bytes(4) + bytes([4, 1, 128, 85, 255, 128, 60, 200]) + bytes([0x44, 0xB0, 3, 0])
+
+
+def test_a_struck_point_is_where_it_went_in_and_ended():
+    p = st.hit_point(POINT)
+    assert (p["component"], p["code"]) == (4, 1)
+    assert p["entry"] == pytest.approx((128 / 255, 85 / 255, 1.0)) and p["exit"] == pytest.approx((128 / 255, 60 / 255, 200 / 255))
+    assert st.hit_point(POINT[4:12])["entry"] == p["entry"]  # 1.x: the 8 bytes alone
+    struck = [r for r in rows(read(replay()), "struck") if r["value"]]
+    assert struck[0]["hitComponent"] == 4 and struck[0]["hitW"] == pytest.approx(1.0)
+    # The shells come from "me", west of the enemy: the shot travels east, the enemy facing north - to its right.
+    d = (struck[0]["hitDirX"], struck[0]["hitDirY"], struck[0]["hitDirZ"])
+    assert math.hypot(*d) == pytest.approx(1.0) and d[2] > 0.5
 
 
 def test_shots_tracers_impacts_and_strikes():
