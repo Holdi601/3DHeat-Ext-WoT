@@ -11,6 +11,11 @@ enciphered, and Wargaming's terms (below) are broad. If the converter ever has
 to go, nothing else goes with it. The Watcher runs it as a command when it is
 installed, and works without it.
 
+Part of [3DHeat](https://github.com/Holdi601/3DHeat), the realtime 3D telemetry and replay viewer
+([documentation](https://holdi601.github.io/3DHeat/)). **Documentation of this converter, step by step
+with pictures: <https://holdi601.github.io/3DHeat-Ext-WoT/>.** The viewer opens the table (Heatmap tab) and the match document (Match tab) as they are; how it packs
+a match into one file is [One file a match](https://holdi601.github.io/3DHeat/container.html).
+
 ```bash
 pip install -e .                                  # installs the heat3d-wot-replay command
 heat3d-wot-replay <replays or folders> -o out     # or: python -m heat3d_ext_wot ...
@@ -32,6 +37,21 @@ failed (the rest are still converted), 2 when none was found.
 
 Replays are where the game saves them when battle recording is on
 (Settings > General > Record battles): `<World of Tanks>/replays/`.
+
+## Options
+
+![heat3d-wot-replay on a synthetic replay](docs/assets/img/convert.svg)
+
+| Option | Default | Does |
+|---|---|---|
+| `replays` (one or more) | - | `.wotreplay` files, or folders searched for them |
+| `-o`, `--out` | required | the folder to write into (a folder per map inside) |
+| `--force` | off | convert again what is already written |
+| `--version` | - | print the version and exit |
+| `-h`, `--help` | - | print the options and exit |
+
+Every start first checks the project's GitHub releases for a newer version and
+asks before installing it; `HEAT3D_NO_UPDATE=1` switches that off.
 
 ## The table
 
