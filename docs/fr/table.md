@@ -24,7 +24,7 @@ Une ligne par échantillon ou événement, dans `<match>.parquet` : 38 colonnes
 | `event` | ce que représente la ligne (voir ci-dessous) |
 | `player`, `team`, `own` | le nom du joueur ; l'équipe `1` ou `2` ; `1` sur les lignes du joueur qui enregistre |
 | `vehicle`, `type` | le char tel que le jeu le nomme (`ussr:R144_K_91`) ; `tank`, ou `shell` pour un traceur ou une explosion dont le tireur est inconnu (aucun joueur) |
-| `x`, `y`, `z` | mètres : x est, y haut, z nord (le monde propre au jeu, gaucher) |
+| `x`, `y`, `z` | mètres : x vers l'est, y vers le haut, z vers le nord (le monde propre au jeu, gaucher) |
 | `dirX`, `dirY`, `dirZ` | vers où pointe la coque, un vecteur unitaire dans le même repère (`dirY` 0 : cap seulement) ; sur un tir ou un traceur, là où l'obus a volé |
 | `turretYaw` | l'angle de la tourelle par rapport au cap de la coque, en radians, positif vers la droite |
 | `gunStep` | l'élévation du canon sous forme de pas de 0 à 63 entre les limites propres du canon (les limites sont les données du char, non celles du replay) |

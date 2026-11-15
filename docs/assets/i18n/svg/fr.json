@@ -23,7 +23,7 @@
   "the table:": "la table :",
   "turretYaw: radians from the hull, + to the right.": "turretYaw : radians depuis la coque, + vers la droite.",
   "x and z lie flat on the ground": "x et z sont à plat sur le sol",
-  "x east, y up, z north (left-handed).": "x est, y haut, z nord (gaucher).",
+  "x east, y up, z north (left-handed).": "x : est, y : haut, z : nord (gaucher).",
   "x: east": "x : est",
   "y: up": "y : haut",
   "z: north": "z : nord"

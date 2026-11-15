@@ -31,7 +31,7 @@ L'onglet Match de la visionneuse le lit. (Le code l'appelle le résumé.)
 | `recordingSeconds` | la durée de l'enregistrement en secondes |
 | `positionPacket`, `hz`, `positions` | le numéro de paquet d'où viennent les positions, les échantillons par seconde, les lignes de position |
 | `events` | le nombre de lignes de la table pour chaque événement |
-| `units` | `metres; x east, y up, z north` (mètres ; x est, y haut, z nord) |
+| `units` | `metres; x east, y up, z north` (mètres ; x vers l'est, y vers le haut, z vers le nord) |
 | `decoded` | les numéros de méthode et de paquet trouvés pour chaque type de message |
 
 ## Joueurs et événements {#players-and-events}
