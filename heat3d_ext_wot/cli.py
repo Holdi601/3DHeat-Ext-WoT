@@ -36,9 +36,9 @@ def find(inputs: list[str]) -> list[Path]:
 def main(argv: list[str] | None = None) -> int:
     # A newer release is offered, and installed only if the user says yes (notified only when nobody can be asked).
     try:
-        import heat3d_update
+        from . import update
 
-        heat3d_update.startup("heat3d_ext_wot")
+        update.startup("heat3d_ext_wot")
     except Exception:  # an update check never stops a conversion
         pass
     ap = argparse.ArgumentParser(prog="heat3d-wot-replay", description="World of Tanks replays into 3DHeat tables")
