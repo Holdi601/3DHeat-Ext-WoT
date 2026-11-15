@@ -1,7 +1,7 @@
 ---
 title: Le document de match
 nav_order: 6
-lang: fr
+lang: "fr"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

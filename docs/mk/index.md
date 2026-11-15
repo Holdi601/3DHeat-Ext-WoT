@@ -1,7 +1,7 @@
 ---
 title: "Почетна"
 nav_order: 1
-lang: mk
+lang: "mk"
 source: index.md
 source_hash: "47f2c74d05ca"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Cum citește un replay
 nav_order: 7
-lang: ro
+lang: "ro"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

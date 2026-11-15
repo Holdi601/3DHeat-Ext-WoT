@@ -1,7 +1,7 @@
 ---
 title: Lentelė
 nav_order: 5
-lang: lt
+lang: "lt"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

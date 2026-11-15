@@ -1,7 +1,7 @@
 ---
 title: Paigaldamine
 nav_order: 3
-lang: et
+lang: "et"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

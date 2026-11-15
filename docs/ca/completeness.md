@@ -1,7 +1,7 @@
 ---
 title: Completesa
 nav_order: 8
-lang: ca
+lang: "ca"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

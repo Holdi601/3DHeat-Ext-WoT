@@ -1,7 +1,7 @@
 ---
 title: "Si e lexon një riluajtje"
 nav_order: 7
-lang: sq
+lang: "sq"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

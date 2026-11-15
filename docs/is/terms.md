@@ -1,7 +1,7 @@
 ---
 title: "Skilmálar og leyfi"
 nav_order: 9
-lang: is
+lang: "is"
 source: terms.md
 source_hash: "7fb5ea01ecb8"
 nav_exclude: true

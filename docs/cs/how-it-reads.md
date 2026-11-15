@@ -1,7 +1,7 @@
 ---
 title: "Jak se replay čte"
 nav_order: 7
-lang: cs
+lang: "cs"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

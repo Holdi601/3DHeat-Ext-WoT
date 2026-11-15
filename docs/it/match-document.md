@@ -1,7 +1,7 @@
 ---
 title: "Il documento della partita"
 nav_order: 6
-lang: it
+lang: "it"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: So liest es ein Replay
 nav_order: 7
-lang: de
+lang: "de"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

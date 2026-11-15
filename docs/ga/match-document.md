@@ -1,7 +1,7 @@
 ---
 title: An cháipéis chluiche
 nav_order: 6
-lang: ga
+lang: "ga"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

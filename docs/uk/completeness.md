@@ -1,7 +1,7 @@
 ---
 title: "Повнота"
 nav_order: 8
-lang: uk
+lang: "uk"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

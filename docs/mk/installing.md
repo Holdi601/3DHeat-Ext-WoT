@@ -1,7 +1,7 @@
 ---
 title: "Инсталирање"
 nav_order: 3
-lang: mk
+lang: "mk"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

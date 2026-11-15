@@ -1,7 +1,7 @@
 ---
 title: Tablica
 nav_order: 5
-lang: hr
+lang: "hr"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

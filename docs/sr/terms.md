@@ -1,7 +1,7 @@
 ---
 title: Услови и лиценца
 nav_order: 9
-lang: sr
+lang: "sr"
 source: terms.md
 source_hash: "7fb5ea01ecb8"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Diegimas
 nav_order: 3
-lang: lt
+lang: "lt"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

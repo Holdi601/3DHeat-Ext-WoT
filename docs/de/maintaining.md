@@ -1,7 +1,7 @@
 ---
 title: Dokumentation pflegen
 nav_order: 99
-lang: de
+lang: "de"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

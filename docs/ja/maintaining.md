@@ -1,7 +1,7 @@
 ---
 title: ドキュメントの保守
 nav_order: 99
-lang: ja
+lang: "ja"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

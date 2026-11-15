@@ -1,7 +1,7 @@
 ---
 title: "Wéi e Replay gelies gëtt"
 nav_order: 7
-lang: lb
+lang: "lb"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

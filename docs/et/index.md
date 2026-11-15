@@ -1,7 +1,7 @@
 ---
 title: Avaleht
 nav_order: 1
-lang: et
+lang: "et"
 source: index.md
 source_hash: "47f2c74d05ca"
 nav_exclude: true

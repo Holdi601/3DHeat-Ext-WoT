@@ -1,7 +1,7 @@
 ---
 title: "Installéieren"
 nav_order: 3
-lang: lb
+lang: "lb"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

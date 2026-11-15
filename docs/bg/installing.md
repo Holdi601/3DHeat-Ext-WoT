@@ -1,7 +1,7 @@
 ---
 title: Инсталиране
 nav_order: 3
-lang: bg
+lang: "bg"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

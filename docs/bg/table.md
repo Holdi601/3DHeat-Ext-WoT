@@ -1,7 +1,7 @@
 ---
 title: Таблицата
 nav_order: 5
-lang: bg
+lang: "bg"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

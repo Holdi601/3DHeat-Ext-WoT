@@ -1,7 +1,7 @@
 ---
 title: "Installeren"
 nav_order: 3
-lang: nl
+lang: "nl"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

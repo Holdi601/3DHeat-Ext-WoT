@@ -1,7 +1,7 @@
 ---
 title: インストール
 nav_order: 3
-lang: ja
+lang: "ja"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

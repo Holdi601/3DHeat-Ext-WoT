@@ -1,7 +1,7 @@
 ---
 title: "Tamlık"
 nav_order: 8
-lang: tr
+lang: "tr"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

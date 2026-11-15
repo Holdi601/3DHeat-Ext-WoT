@@ -1,7 +1,7 @@
 ---
 title: Začetna stran
 nav_order: 1
-lang: sl
+lang: "sl"
 source: index.md
 source_hash: "47f2c74d05ca"
 nav_exclude: true

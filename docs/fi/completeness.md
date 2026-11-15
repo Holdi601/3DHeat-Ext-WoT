@@ -1,7 +1,7 @@
 ---
 title: Täydellisyys
 nav_order: 8
-lang: fi
+lang: "fi"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

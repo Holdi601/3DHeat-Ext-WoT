@@ -1,7 +1,7 @@
 ---
 title: Kā tas nolasa atkārtojumu
 nav_order: 7
-lang: lv
+lang: "lv"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

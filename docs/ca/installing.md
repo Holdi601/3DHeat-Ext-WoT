@@ -1,7 +1,7 @@
 ---
 title: Instal·lació
 nav_order: 3
-lang: ca
+lang: "ca"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

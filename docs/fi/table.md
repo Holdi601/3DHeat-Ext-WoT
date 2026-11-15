@@ -1,7 +1,7 @@
 ---
 title: Taulukko
 nav_order: 5
-lang: fi
+lang: "fi"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "Tekrarları çevirme"
 nav_order: 4
-lang: tr
+lang: "tr"
 source: converting.md
 source_hash: "489c52c182ae"
 nav_exclude: true

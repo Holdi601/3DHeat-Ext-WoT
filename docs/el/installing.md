@@ -1,7 +1,7 @@
 ---
 title: "Εγκατάσταση"
 nav_order: 3
-lang: el
+lang: "el"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

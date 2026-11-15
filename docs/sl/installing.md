@@ -1,7 +1,7 @@
 ---
 title: Namestitev
 nav_order: 3
-lang: sl
+lang: "sl"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

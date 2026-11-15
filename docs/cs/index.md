@@ -1,7 +1,7 @@
 ---
 title: "Domů"
 nav_order: 1
-lang: cs
+lang: "cs"
 source: index.md
 source_hash: "47f2c74d05ca"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: "Супровід документації"
 nav_order: 99
-lang: uk
+lang: "uk"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

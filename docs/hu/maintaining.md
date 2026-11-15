@@ -1,7 +1,7 @@
 ---
 title: "Karbantartás"
 nav_order: 99
-lang: hu
+lang: "hu"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

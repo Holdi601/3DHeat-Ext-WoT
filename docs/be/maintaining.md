@@ -1,7 +1,7 @@
 ---
 title: "Суправаджэнне"
 nav_order: 99
-lang: be
+lang: "be"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Miten replay luetaan
 nav_order: 7
-lang: fi
+lang: "fi"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

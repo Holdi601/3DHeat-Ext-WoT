@@ -1,7 +1,7 @@
 ---
 title: "Kampdokumentet"
 nav_order: 6
-lang: no
+lang: "no"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

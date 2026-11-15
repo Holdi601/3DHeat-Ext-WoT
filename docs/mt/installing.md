@@ -1,7 +1,7 @@
 ---
 title: "Installazzjoni"
 nav_order: 3
-lang: mt
+lang: "mt"
 source: installing.md
 source_hash: "da6c577ace69"
 nav_exclude: true

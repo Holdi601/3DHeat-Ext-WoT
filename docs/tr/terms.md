@@ -1,7 +1,7 @@
 ---
 title: "Koşullar ve lisans"
 nav_order: 9
-lang: tr
+lang: "tr"
 source: terms.md
 source_hash: "7fb5ea01ecb8"
 nav_exclude: true

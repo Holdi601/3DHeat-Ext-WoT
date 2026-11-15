@@ -1,7 +1,7 @@
 ---
 title: "Dokument zápasu"
 nav_order: 6
-lang: cs
+lang: "cs"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

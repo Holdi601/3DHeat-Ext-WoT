@@ -1,7 +1,7 @@
 ---
 title: 리플레이를 읽는 법
 nav_order: 7
-lang: ko
+lang: "ko"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

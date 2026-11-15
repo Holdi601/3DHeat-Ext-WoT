@@ -1,7 +1,7 @@
 ---
 title: Пълнота
 nav_order: 8
-lang: bg
+lang: "bg"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

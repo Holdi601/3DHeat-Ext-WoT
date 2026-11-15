@@ -1,7 +1,7 @@
 ---
 title: Exhaustivité
 nav_order: 8
-lang: fr
+lang: "fr"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

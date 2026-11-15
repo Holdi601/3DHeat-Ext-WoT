@@ -1,7 +1,7 @@
 ---
 title: "維護文件"
 nav_order: 99
-lang: zh-Hant
+lang: "zh-Hant"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

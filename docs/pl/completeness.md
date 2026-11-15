@@ -1,7 +1,7 @@
 ---
 title: Kompletność
 nav_order: 8
-lang: pl
+lang: "pl"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

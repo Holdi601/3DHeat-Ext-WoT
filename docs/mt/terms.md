@@ -1,7 +1,7 @@
 ---
 title: "Termini u liċenzja"
 nav_order: 9
-lang: mt
+lang: "mt"
 source: terms.md
 source_hash: "7fb5ea01ecb8"
 nav_exclude: true

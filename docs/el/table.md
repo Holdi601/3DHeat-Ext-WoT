@@ -1,7 +1,7 @@
 ---
 title: "Ο πίνακας"
 nav_order: 5
-lang: el
+lang: "el"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

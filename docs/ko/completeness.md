@@ -1,7 +1,7 @@
 ---
 title: 완전성
 nav_order: 8
-lang: ko
+lang: "ko"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

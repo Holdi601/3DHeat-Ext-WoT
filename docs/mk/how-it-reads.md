@@ -1,7 +1,7 @@
 ---
 title: "Како чита снимка"
 nav_order: 7
-lang: mk
+lang: "mk"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

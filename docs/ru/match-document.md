@@ -1,7 +1,7 @@
 ---
 title: Документ матча
 nav_order: 6
-lang: ru
+lang: "ru"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

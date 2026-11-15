@@ -1,7 +1,7 @@
 ---
 title: Dokumentatsiooni hooldus
 nav_order: 99
-lang: et
+lang: "et"
 source: maintaining.md
 source_hash: "d09c2d337070"
 nav_exclude: true

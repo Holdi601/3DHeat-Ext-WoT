@@ -1,7 +1,7 @@
 ---
 title: Документът на мача
 nav_order: 6
-lang: bg
+lang: "bg"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

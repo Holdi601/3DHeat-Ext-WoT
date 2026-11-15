@@ -1,7 +1,7 @@
 ---
 title: "Як чытаецца запіс"
 nav_order: 7
-lang: be
+lang: "be"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

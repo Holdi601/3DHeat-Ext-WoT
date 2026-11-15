@@ -1,7 +1,7 @@
 ---
 title: "D'Match-Dokument"
 nav_order: 6
-lang: lb
+lang: "lb"
 source: match-document.md
 source_hash: "177568e76e30"
 nav_exclude: true

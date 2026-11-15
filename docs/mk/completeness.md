@@ -1,7 +1,7 @@
 ---
 title: "Комплетност"
 nav_order: 8
-lang: mk
+lang: "mk"
 source: completeness.md
 source_hash: "9bbf47120a80"
 nav_exclude: true

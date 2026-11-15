@@ -1,7 +1,7 @@
 ---
 title: "It-tabella"
 nav_order: 5
-lang: mt
+lang: "mt"
 source: table.md
 source_hash: "2c5932983271"
 nav_exclude: true

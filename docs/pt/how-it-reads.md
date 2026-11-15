@@ -1,7 +1,7 @@
 ---
 title: Como ele lê um replay
 nav_order: 7
-lang: pt
+lang: "pt"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true

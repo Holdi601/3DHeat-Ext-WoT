@@ -1,7 +1,7 @@
 ---
 title: "Ako sa replay číta"
 nav_order: 7
-lang: sk
+lang: "sk"
 source: how-it-reads.md
 source_hash: "cded05962390"
 nav_exclude: true
