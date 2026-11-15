@@ -25,7 +25,7 @@ Do gach cineál míre, tugann `selfCheck.completeness.types`:
 | `raw` | coinnithe iomlán sa chomhad cliatháin amháin, gan léamh |
 | `lost` | caillte: i gcónaí `0` |
 
-Is iad cineálacha na hathsheinme féin iad na cineálacha: `block 0` (an ceanntásc), `block 1` (na torthaí), `container sizes` agus `deflate tail` (beartanna féin an choimeádáin), `packet <type>`, agus do ghlaonna ar eintitis `method <entity type>.<number>` agus `property <entity type>.<number>`. Is iad na huimhreacha a thugann na paicéid chruthaithe cineálacha eintitis; deir `selfCheck.entities.roles` cé acu avatar an imreora taifeadta agus cé acu na feithiclí. Taispeánann cineál nach raibh a fhios ag aon duine faoi lena chomhaireamh.
+Is iad cineálacha na hathsheinme féin iad na cineálacha: `block 0` (an ceanntásc), `block 1` (na torthaí), `container sizes` agus `deflate tail` (beartanna féin an choimeádáin), `packet <type>`, agus do ghlaonna ar eintitis `method <entity type>.<number>` agus `property <entity type>.<number>`. Is iad na huimhreacha a thugann na paicéid chruthaithe cineálacha eintitis; deir `selfCheck.entities.roles` cé acu avatar an imreora taifeadta agus cé acu na feithiclí. Taispeántar cineál nach raibh ar eolas ag aon duine lena chomhaireamh.
 
 ## An comhad cliatháin {#the-sidecar}
 
@@ -42,7 +42,7 @@ Sórtáiltear sraitheanna de réir paicéid, modha, eintitis agus ama.
 
 ## Cad a léitear, agus conas a seiceáladh é {#what-is-read-and-how-it-was-checked}
 
-- **Pitch agus roll** gach suímh: is é an pitch lúide fána chosán féin an tanc fad a thiomáineann sé ar aghaidh; tá an roll céanna ag dhá thanc ag áit amháin le heading amháin, rolls urchomhaireacha le headings urchomhaireacha.
+- **Pitch agus roll** gach suímh: is é an pitch lúide fána chosán féin an tanc fad a thiomáineann sé ar aghaidh; tá an roll céanna ag dhá thanc ag áit amháin le treo amháin, rolls urchomhaireacha le treonna urchomhaireacha.
 - **Eintitis** (`entities`): cathain a tháinig gach ceann isteach i radharc an chliaint agus cathain a d'fhág. Níl aon suíomh ag tanc ar bith idir imeacht agus teacht ar ais.
 - **An leagan sa sruth** (`streamVersion`): mar an gcéanna le leagan an cheanntáisc.
 - **Aim an imreora taifeadta** (paicéad 38): treo, i `decoded` an chomhaid chliatháin (`forward`); ag lámhaigh an imreora is codán céime é ón áit ar eitil an sliogán.

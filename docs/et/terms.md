@@ -11,7 +11,7 @@ search_exclude: true
 
 ## Wargamingi tingimused {#wargamings-terms}
 
-Loetud 2026-11-07, Wargamingi EULA versioon 14 (jõustunud 10. aprillil 2024, nimetatud praeguseks):
+Loetud 2026-11-07, Wargamingi EULA versioon 14 (jõustus 10. aprillil 2024, on praegu kehtiv):
 
 - 5.3 (b): kui ei ole kirjalikult volitatud, ei tohi sa "... decompile, disassemble, reverse engineer or otherwise make
   unauthorized use of the Content".

@@ -40,7 +40,7 @@ todėl jis yra atskiras paketas.
 
 MIT ([`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/LICENSE)). Reikia numpy (BSD-3-Clause) ir pyarrow
 (Apache-2.0). Parašyta šiam projektui: čia esantis Blowfish šifras yra jo paties, o jo lentelės apskaičiuotos iš
-skaitmenų, kuriuos šifras apibrėžia pagal skaičių pi. Fakti apie formatą (konteinerį, šifrą, pozicijos paketą) įrankiai,
+skaitmenų, kuriuos šifras apibrėžia pagal skaičių pi. Faktai apie formatą (konteinerį, šifrą, pozicijos paketą) įrankiai,
 skaitantys įrašus, žino bendrai - evido/wotreplay-parser (BSD-3-Clause) juos aprašo; joks kodas iš jo ar iš kito
 projekto nepaimtas.
 

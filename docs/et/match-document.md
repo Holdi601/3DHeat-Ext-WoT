@@ -27,7 +27,7 @@ search_exclude: true
 | `duration` | lahingu pikkus sekundites, tulemustest |
 | `winnerTeam`, `finishReason` | võitev meeskond ja mängu number selle kohta, kuidas lahing lõppes, tulemustest |
 | `complete`, `truncated` | tulemused on kordusel; salvestus katkes varakult |
-| `battleStart`, `battleStartFrom`, `firstMovement` | lahingu algus sekundites salvestusest; `arena` (areen ütles nii) või `movement` (esimene hetk, kui mõni tank liikus); see esimene liikumine |
+| `battleStart`, `battleStartFrom`, `firstMovement` | lahingu algus sekundites salvestusest; `arena` (areen ütles nii) või `movement` (esimene hetk, kui mõni tank liikus) |
 | `recordingSeconds` | salvestuse pikkus sekundites |
 | `positionPacket`, `hz`, `positions` | pakettinumber, millega asukohad tulid, näidised sekundis, asukohtade read |
 | `events` | iga sündmuse tabeli ridade arv |
@@ -38,7 +38,7 @@ search_exclude: true
 
 | Võti | Mis see on |
 |---|---|
-| `players` | üks kirje tanki kohta: nimi, meeskond, tank, klann, näidised, tapmised, tekitatud kahju, ellu jäänud, elueaa; `seen` (lasud ja kahju, mida salvestav klient nägi); päise ja tulemuste kogu kirje ja konto oma |
+| `players` | üks kirje tanki kohta: nimi, meeskond, tank, klann, näidised, tapmised, tekitatud kahju, ellu jäänud, eluiga; `seen` (lasud ja kahju, mida salvestav klient nägi); päise ja tulemuste täielik kirje ning konto oma |
 | `kills` | iga surm: aeg (sekundites), kust aeg tuli (`arena`, `health` või `lifeTime`), ohver, tapja, põhjuse number ja nimi |
 | `periods` | lahingu perioodid (ootamine, eelmäng, lahing, järelmäng) serveri lõppaegadega |
 | `basePoints` | baasi vallutuse edenemine meeskonna ja baasi kaupa |

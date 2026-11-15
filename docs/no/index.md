@@ -13,9 +13,9 @@ permalink: /no/
 **Hva er det?** World of Tanks kan lagre hvert slag du spiller som en replay-fil.
 Dette verktøyet gjør disse filene om til en tabell og et kampdokument (slagets
 oppsummering) som [3DHeat-visningsprogrammet](https://holdi601.github.io/3DHeat/)
-viser i 3D: hvor hver tank kjørte, skjøt og ble truffet.
+viser i 3D: hvor hver stridsvogn kjørte, skjøt og ble truffet.
 
-**Hvorfor skulle jeg bruke det?** For å se et slag på nytt ovenfra, alle tankene
+**Hvorfor skulle jeg bruke det?** For å se et slag på nytt ovenfra, alle stridsvognene
 samtidig; for å se varmekart over hvor du og andre kjører, kjemper og dør over
 hundrevis av slag; eller for å lese en replay med egne skript, siden resultatet er
 vanlig Parquet og JSON.
@@ -58,7 +58,7 @@ Du bør se én linje per replay, som slutter med filen den skrev:
 Denne konverteren er et av verktøyene i [3DHeat](https://github.com/Holdi601/3DHeat),
 en sanntids 3D-visning for telemetri og replayer ([dokumentasjon](https://holdi601.github.io/3DHeat/)).
 Visningsprogrammet åpner tabellen i fanen Varmekart og kampdokumentet i fanen Kamp.
-Det kan pakke et slags filer til én fil:
+Det kan pakke filene for ett slag til én fil:
 [Én fil per kamp](https://holdi601.github.io/3DHeat/container.html). Det hver
 konverter må beholde: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
 

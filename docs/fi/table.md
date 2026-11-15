@@ -36,7 +36,7 @@ Yksi rivi näytettä tai tapahtumaa kohden tiedostossa `<match>.parquet`: 38 sar
 | `hitComponent`, `hitCode`, `hitU/V/W`, `hitExitU/V/W`, `hitDirX/Y/Z` | vain `struck`-riveillä: missä kuori osui (katso alla oleva `struck`-tapahtuma) |
 | `pitch`, `roll` | sijainnissa rungon kallistus (radiaaneina, positiivinen nokka alas) ja roll, sellaisina kuin peli ne lähettää |
 
-| `event` | Millä rivillä | Mitä |
+| `event` | Kenen rivi | Mitä |
 |---|---|---|
 | `position` | jokainen ajoneuvo | noin kymmenen kertaa sekunnissa, kun asiakas tiesi, missä se oli |
 | `death`, `kill` | uhri, tappaja | jokainen kuolema kahdesti: missä uhri kaatui, ja missä tappaja seisoi |

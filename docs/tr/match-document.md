@@ -27,7 +27,7 @@ onu okur. (Kod buna özet der.)
 | `duration` | savaşın saniye cinsinden süresi, sonuçlardan |
 | `winnerTeam`, `finishReason` | kazanan takım ve savaşın nasıl bittiğinin oyundaki numarası, sonuçlardan |
 | `complete`, `truncated` | sonuçlar tekrarda var; kayıt erken durdu |
-| `battleStart`, `battleStartFrom`, `firstMovement` | savaşın başlangıcı, kaydın saniyesi cinsinden; `arena` (arena öyle söyledi) ya da `movement` (herhangi bir tankın ilk hareket ettiği an); o ilk hareket |
+| `battleStart`, `battleStartFrom`, `firstMovement` | savaşın başlangıcı, kaydın saniyesi cinsinden; `arena` (arenanın bildirdiği an) ya da `movement` (herhangi bir tankın ilk hareket ettiği an); o ilk hareket |
 | `recordingSeconds` | kaydın saniye cinsinden uzunluğu |
 | `positionPacket`, `hz`, `positions` | konumların geldiği paket numarası, saniyedeki örnek, konum satırları |
 | `events` | her olay türünün tablo satırı sayısı |

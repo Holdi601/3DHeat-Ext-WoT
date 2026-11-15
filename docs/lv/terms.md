@@ -13,14 +13,14 @@ search_exclude: true
 
 Lasīts 2026-11-07, Wargaming EULA versija 14 (spēkā no 2024. gada 10. aprīļa, uzskaitīta kā pašreizējā):
 
-- 5.3 (b): ja nav rakstiski atļauts, tu nedrīksti "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content".
+- 5.3 (b): ja nav rakstiski atļauts, jūs nedrīkstat "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content".
 - 12.1 (k): aizliegts ir "Creating, using, making available, or distributing any unauthorized software or tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication between such software and Wargaming."
 - 12.1 (l): "... any software designed to modify a Product and change the user experience ("mods") unless expressly permitted by Wargaming".
 - 12.1 (p): "Circumventing or bypassing enforcement and security measures implemented by Wargaming".
 
 World of Tanks aizliegto modifikāciju saraksts attiecas uz pašu kauju: modifikācijas, kas "reveal the position of enemies in a way not included in the client", mērķēšanas robotus, pārlādēšanas taimerus un tamlīdzīgi. Ne EULA, ne šis saraksts nemin atkārtojumus.
 
-Ko dara šis konvertētājs: tas nolasa failu, ko spēle uzrakstīja pēc kaujas, ārpus spēles. Tas nemaina neko spēlē, nesazinās ar serveri un nerāda neko kaujas laikā. Tas tomēr atšifrē straumi ar spēles atslēgu, ko 5.3 (b) un 12.1 (p) var lasīt kā aptverošu. Tā izmantošana ir lietotāja lēmums; tāpēc tas ir atsevišķs pakotne.
+Ko dara šis konvertētājs: tas nolasa failu, ko spēle uzrakstīja pēc kaujas, ārpus spēles. Tas nemaina neko spēlē, nesazinās ar serveri un nerāda neko kaujas laikā. Tas tomēr atšifrē straumi ar spēles atslēgu, ko 5.3 (b) un 12.1 (p) var lasīt kā aptverošu. Tā izmantošana ir lietotāja lēmums; tāpēc tas ir atsevišķa pakotne.
 
 ## Licence un avoti {#licence-and-sources}
 

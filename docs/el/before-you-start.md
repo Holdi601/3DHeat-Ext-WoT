@@ -13,11 +13,11 @@ search_exclude: true
 λειτουργικό `heat3d-wot-replay` σε περίπου δέκα λεπτά. Αν ήδη χρησιμοποιείτε Python,
 πηγαίνετε κατευθείαν στο [Εγκατάσταση](installing.md).
 
-## 1. Εγκατάστασε την Python {#install-python}
+## 1. Εγκαταστήστε την Python {#install-python}
 
 1. Κατεβάστε την Python **3.10 ή νεότερη** από το
    [python.org/downloads](https://www.python.org/downloads/).
-2. Στα Windows, τικάρετε **Add python.exe to PATH** στο πρώτο παράθυρο του
+2. Στα Windows, επιλέξτε **Add python.exe to PATH** στο πρώτο παράθυρο του
    εγκαταστάτη, και μετά πατήστε **Install Now**.
 3. Σε macOS και Linux, η Python 3 είναι συχνά ήδη εκεί. Γράψτε `python3` όπου
    αυτές οι σελίδες λένε `python`, και `pip3` αντί για `pip`.
@@ -47,7 +47,7 @@ python --version
 Πρέπει να δείτε `Python 3.` και έναν αριθμό 10 ή μεγαλύτερο, για παράδειγμα
 `Python 3.12.4`.
 
-## 4. Πάρτε το εργαλείο και εγκατάστησέ το {#get-the-tool-and-install-it}
+## 4. Πάρτε το εργαλείο και εγκαταστήστε το {#get-the-tool-and-install-it}
 
 1. Στη [σελίδα GitHub του εργαλείου](https://github.com/Holdi601/3DHeat-Ext-WoT), πατήστε
    το πράσινο κουμπί **Code**, και μετά **Download ZIP**, και αποσυμπιέστε το zip.
@@ -91,7 +91,7 @@ example.wotreplay: 534 θέσεις από 3 οχήματα στα 10,0 Hz, ... 
 
 | Βλέπετε | Τι να κάνετε |
 |---|---|
-| `'python' is not recognized ...` ή `command not found` | Η Python δεν είναι στο PATH: εγκαταστήστε την ξανά με το **Add python.exe to PATH** τικαρισμένο, ή γράψτε `py` αντί για `python` (Windows) |
+| `'python' is not recognized ...` ή `command not found` | Η Python δεν είναι στο PATH: εγκαταστήστε την ξανά με το **Add python.exe to PATH** επιλεγμένο, ή γράψτε `py` αντί για `python` (Windows) |
 | `'pip' is not recognized ...` | γράψτε `python -m pip install -e .` αντί γι' αυτό |
 | `'heat3d-wot-replay' is not recognized ...` | γράψτε `python -m heat3d_ext_wot` αντί για `heat3d-wot-replay`· κάνει το ίδιο |
 | `No module named heat3d_ext_wot` | δεν είστε στον φάκελο του εργαλείου, ή δεν είναι εγκατεστημένο: `cd` εκεί και τρέξτε `pip install -e .` |

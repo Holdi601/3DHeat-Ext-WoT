@@ -1,7 +1,7 @@
 {
  "(folders are searched, subfolders too)": "(Dossieren ginn duerchsicht, Ënnerdossieren och)",
  ".wotreplay files, or folders that hold them": ".wotreplay-Dateien oder Dossieren domat",
- "1. Your replays": "1. Deng Replays",
+ "1. Your replays": "1. Är Replays",
  "2. heat3d-wot-replay": "2. heat3d-wot-replay",
  "3. The 3DHeat viewer": "3. Den 3DHeat-Viewer",
  "<match>.match.json": "<match>.match.json",
@@ -19,7 +19,7 @@
  "positions and events": "Positiounen an Evenementer",
  "reads every part of each replay": "liest all Deel vun all Replay",
  "the match document:": "d'Match-Dokument:",
- "the sidecar: everything": "de Sidecar: alles",
+ "the sidecar: everything": "d'Niewendatei: alles",
  "the table:": "d'Tabell:",
  "turretYaw: radians from the hull, + to the right.": "turretYaw: Radianten vum Rumpf, + no riets.",
  "x and z lie flat on the ground": "x an z leien flaach um Buedem",

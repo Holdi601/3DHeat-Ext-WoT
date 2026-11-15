@@ -13,7 +13,7 @@ En replay er en header av JSON-blokker og spillets pakkestrøm (formatnotater i
 [`heat3d_ext_wot/bigworld.py`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/heat3d_ext_wot/bigworld.py)):
 
 - Den første blokken, i klartekst: kartet, klientversjonen, opptakspilotens spiller, serverens innstillinger og
-  listen over deltakere (`vehicles`: navn, lag, tank, nøklet etter kjøretøyets ID).
+  listen over deltakere (`vehicles`: navn, lag, stridsvogn, nøklet etter kjøretøyets ID).
 - Den andre, når opptaket varte til slutten: resultatskjermen - hvert kjøretøys linje
   (skudd, treff, gjennomslag, skade gjort, mottatt, blokkert og assistert, spotting, xp,
   kreditter, prestasjoner ...), opptakspilotens detaljer per mål, kontoene, kampens varighet,
@@ -66,12 +66,12 @@ høyde), bare i kampdokumentet. Et opptak som stoppet før slutten, har ingen d�
 Lesingen ble kontrollert på offentlige replayer fra klientene 1.12 og 2.4, hver verdi mot noe replayen
 gir en annen gang:
 
-- **Posisjoner:** hver tank som noen gang er sett, har et spor med ti samples i sekundet; farter holder seg
-  innenfor det en tank kan; retningen stemmer med bevegelsesretningen til ca. 0,02 rad; der resultatene gir et
+- **Posisjoner:** hver stridsvogn som noen gang er sett, har et spor med ti samples i sekundet; farter holder seg
+  innenfor det en stridsvogn kan; retningen stemmer med bevegelsesretningen til ca. 0,02 rad; der resultatene gir et
   dødsfalls sted, ligger stedet lest her innen noen få meter fra det.
 - **Opptakspilotens:** skudd og gjort skade leses lik resultatenes verdier, på hver replay som ble kontrollert.
-- **Helse:** hver tanks siste leste helse er lik resultatenes; mottatt skade som leses, er aldri mer enn resultatenes.
-  På 2.4 sendes ofte det dødelige slaget mot en tank utenfor klientens syn ikke.
+- **Helse:** hver stridsvogns siste leste helse er lik resultatenes; mottatt skade som leses, er aldri mer enn resultatenes.
+  På 2.4 sendes ofte det dødelige slaget mot en stridsvogn utenfor klientens syn ikke.
 - **Treff:** et treffs skade er lik helseendringen i det øyeblikket for nesten hvert treff.
 - **Tårn:** ved et skudd peker skrogets retning pluss tårnets gir dit sporstoffet fløy, innen ca. 0,01 rad (median).
 - **Dødsfall og slagets start:** innen ca. ett sekund av det resultatene og arenaen sier.

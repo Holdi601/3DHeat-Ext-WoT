@@ -38,7 +38,7 @@ tundnud, ilmub oma loendusega.
 
 | Veerg | Mis see on |
 |---|---|
-| `time` | kordusa kell, nagu tabelis |
+| `time` | korduse kell, nagu tabelis |
 | `type`, `name` | üksuse liik; mida konverter selle nimetab, kus ta seda loeb |
 | `entity` | sõiduk või avatar, kuhu see kuulub, nagu tabeli `entity` |
 | `decoded` | mis sellest loeti, JSON-ina |

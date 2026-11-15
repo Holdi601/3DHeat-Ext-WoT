@@ -58,7 +58,7 @@ që u ndal para fundit nuk ka vdekje.
 
 **Të palexuara:**
 
-- Zbulimi dhe minihrata: nuk janë në rrjedhë si ngjarje më vete.
+- Zbulimi dhe minihartë: nuk janë në rrjedhë si ngjarje më vete.
 - Ngritja e topit në gradë: rrjedha ka një hap midis kufijve të topit,
   dhe kufijtë janë në skedarët e mjeteve të lojës.
 - Dëmtimi i moduleve, lëndimet e ekuipazhit, konsumueshmet dhe municioni: thirrjet që

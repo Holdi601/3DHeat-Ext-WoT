@@ -59,7 +59,7 @@ Per replay, inn i `out/<kart>/`:
 
 | Fil | Hva |
 |---|---|
-| `<kamp>.parquet` | tabellen: hver tanks posisjon over tid og hver hendelse der den skjedde ([Tabellen](table.md)) |
+| `<kamp>.parquet` | tabellen: hver stridsvogns posisjon over tid og hver hendelse der den skjedde ([Tabellen](table.md)) |
 | `<kamp>.match.json` | kampdokumentet: kart, klientversjon, spillere, drap, resultater og alt annet ([Kampdokumentet](match-document.md)) |
 | `<kamp>.messages.parquet` | sidefilen: hver post i replayen som de to filene over ikke holder helt ([Fullstendighet](completeness.md)) |
 

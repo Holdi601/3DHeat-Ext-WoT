@@ -33,7 +33,7 @@ Listi World of Tanks yfir bannaðar viðbætur (mods) snýst um bardagann sjálf
 bottar, endurhleðslutímar og þess háttar. Hvorki EULA né sá listi nefnir
 upptökur.
 
-Það sem þessi breytir gerir: hann les skrá sem leikurinn skrifaði, eftir bardagann,
+Það sem þessi umbreytir gerir: hann les skrá sem leikurinn skrifaði, eftir bardagann,
 utan leiksins. Hann breytir engu í leiknum, talar við engan þjón og
 sýnir ekkert meðan á bardaga stendur. Hann afkóðar strauminn með lykli leiksins,
 sem hægt er að lesa 5.3 (b) og 12.1 (p) þannig að nái yfir. Notkun hans er ákvörðun
@@ -49,7 +49,7 @@ upptökuverkfæra - evido/wotreplay-parser (BSD-3-Clause) skjalfestir þær;
 enginn kóði var tekinn úr honum né úr nokkru öðru verkefni.
 
 `bigworld.py` og `table.py` eru sömu skrár og í World of Warships
-breytinum ([3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs)); breyttu báðum saman.
+umbreytinum ([3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs)); breyttu báðum saman.
 
 ---
 

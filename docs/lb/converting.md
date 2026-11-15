@@ -11,23 +11,23 @@ search_exclude: true
 
 ## Schrëtt fir Schrëtt {#step-by-step}
 
-1. **Schalt d'Opnam am Spill un**: Settings > General > Record battles.
-   Vun do un späichert d'Spill all Gefecht am `replays`-Dossier vun denger
+1. **Schaltet d'Opnam am Spill un**: Settings > General > Record battles.
+   Vun do un späichert d'Spill all Gefecht am `replays`-Dossier vun Ärer
    World-of-Tanks-Installatioun, zum Beispill
    `C:\Games\World_of_Tanks_EU\replays`.
-2. **Maach en Terminal op** an engem Dossier, an dee d'Resultater däerfen goen
-   ([Ier s du ufänks](before-you-start.md)).
-3. **Looss de Konverter lafen** op Replay-Dateien, oder op Dossieren, déi se enthalen:
+2. **Mécht en Terminal op** an engem Dossier, an dee d'Resultater däerfen goen
+   ([Ier Dir ufänkt](before-you-start.md)).
+3. **Loosst de Konverter lafen** op Replay-Dateien, oder op Dossieren, déi se enthalen:
 
    ```bash
    heat3d-wot-replay "C:\Games\World_of_Tanks_EU\replays" -o out
    heat3d-wot-replay a.wotreplay b.wotreplay -o out
    ```
 
-   `out` gëtt an dem Dossier gemaach, an deem däin Terminal ass.
-4. **Liest, wat et seet.** Du soll eng Zeil pro Replay gesinn, déi mat der
+   `out` gëtt an dem Dossier gemaach, an deem Äre Terminal ass.
+4. **Liest, wat et seet.** Dir sollt eng Zeil pro Replay gesinn, déi mat der
    Tabell ophält, déi geschriwwe gouf.
-5. **Maach d'Resultat op** am 3DHeat-Viewer: `out/<map>/<match>.parquet`
+5. **Mécht d'Resultat op** am 3DHeat-Viewer: `out/<map>/<match>.parquet`
    am Heatmap-Tab, `<match>.match.json` am Match-Tab. Oder liest se
    mat engem Parquet- oder JSON-Reader.
 
@@ -63,7 +63,7 @@ Pro Replay, an `out/<map>/`:
 |---|---|
 | `<match>.parquet` | d'Tabell: d'Positioun vun all Panzer iwwer d'Zäit an all Evenement do, wou et geschitt ass ([D'Tabell](table.md)) |
 | `<match>.match.json` | d'Match-Dokument: Kaart, Clientversioun, Spiller, Kills, Resultater an alles anescht ([D'Match-Dokument](match-document.md)) |
-| `<match>.messages.parquet` | de Sidecar: all Stéck vum Replay, dat déi zwou Dateie driwwer net ganz halen ([Vollstännegkeet](completeness.md)) |
+| `<match>.messages.parquet` | d'Niewendatei: all Stéck vum Replay, dat déi zwou Dateie driwwer net ganz halen ([Vollstännegkeet](completeness.md)) |
 
 `<match>` ass dem Gefecht seng eege ID, oder den Numm vun der Datei, wann d'Opnam
 virun de Resultater opgehal huet.

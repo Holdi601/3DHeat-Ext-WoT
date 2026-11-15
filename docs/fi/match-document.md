@@ -20,7 +20,7 @@ Ottelu-välilehti lukee sen. (Koodi kutsuu sitä yhteenvedoksi.)
 |---|---|
 | `format`, `version` | `heat3d-wot-match`, `2` |
 | `game`, `match`, `map`, `mapName` | `World of Tanks`; taistelun tunnus; kartan tunnus ja sen näyttönimi |
-| `clientVersion`, `streamVersion` | pelin versio otsikosta, ja sellaisena kuin paketti­virta sen kertoo |
+| `clientVersion`, `streamVersion` | pelin versio otsikosta, ja sellaisena kuin pakettivirta sen kertoo |
 | `recorded` | milloin replay tallennettiin, sellaisena kuin peli sen kirjoittaa |
 | `player`, `vehicle` | tallentava pelaaja ja hänen panssarivaununsa |
 | `battleType`, `gameplay`, `server`, `region`, `hasMods` | otsikon taistelutyypin numero, pelimuoto, palvelin, alue ja se, oliko modeja asennettu |
@@ -52,7 +52,7 @@ Ottelu-välilehti lukee sen. (Koodi kutsuu sitä yhteenvedoksi.)
 |---|---|
 | `serverSettings` | palvelimen asetukset otsikosta |
 | `results`, `resultVehicles`, `frags` | tulosnäkymä: yhteiset, henkilökohtaiset (kohdekohtaisine yksityiskohtineen), pelaajat, tilit; jokaisen tankin tulosrivi; tapot pelaajaa kohden |
-| `entities` | jokainen paketti­virran luoma kokonaisuus: sen tyyppinumero ja rooli, milloin se tuli asiakkaan näkyviin ja milloin se poistui |
+| `entities` | jokainen pakettivirran luoma kokonaisuus: sen tyyppinumero ja rooli, milloin se tuli asiakkaan näkyviin ja milloin se poistui |
 | `selfCheck` | täydellisyyslaskuri ([Täydellisyys](completeness.md)) ja kokonaisuuksien ja version tarkistukset |
 
 ---

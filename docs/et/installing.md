@@ -16,7 +16,7 @@ ja pyarrow paigaldatakse koos sellega.
 
 1. Hangi kood: `git clone https://github.com/Holdi601/3DHeat-Ext-WoT.git`, või laadi zip alla lehelt
    [Releases](https://github.com/Holdi601/3DHeat-Ext-WoT/releases) ja paki lahti.
-2. Ava terminal selles kaustas ja kirjuta `pip install -e .`. See paneb käsu `heat3d-wot-replay` sinu teele.
+2. Ava terminal selles kaustas ja kirjuta `pip install -e .`. See teeb käsu `heat3d-wot-replay` kättesaadavaks.
 3. Kontrolli: `heat3d-wot-replay --version`. Peaksid nägema `heat3d-wot-replay 0.1.0`.
    `heat3d-wot-replay --help` loetleb valikud:
 
@@ -29,9 +29,8 @@ Ilma paigaldamata teeb sama `python -m heat3d_ext_wot ...` tööriista kaustas.
 ## Uuendused {#updates}
 
 Iga käivitamine kontrollib kõigepealt projekti GitHubi väljalaske (kõige rohkem üks päring iga paari tunni tagant;
-see ei peata kunagi konverteerimist, võrgus või mitte). Kui on ilmunud uuem väljalase, küsib käsk enne
-paigaldamist: `git clone` uuendatakse käsuga `git pull --ff-only` (keeldub, kui sul on lokaalseid muudatusi),
-allalaaditud koopia väljalaske arhiivist. `HEAT3D_NO_UPDATE=1` lülitab kontrolli ja uuendamise välja.
+see ei peata kunagi konverteerimist, ka siis, kui võrku ei ole). Kui on ilmunud uuem väljalase, küsib käsk enne
+paigaldamist: `git clone` uuendatakse käsuga `git pull --ff-only` (keeldub, kui sul on lokaalseid muudatusi); allalaaditud koopia uuendatakse väljalaske arhiivist. `HEAT3D_NO_UPDATE=1` lülitab kontrolli ja uuendamise välja.
 
 ---
 

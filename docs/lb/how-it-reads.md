@@ -65,7 +65,7 @@ déi virum Enn opgehalen huet, huet keng Doudeger.
   se droen, konnten iwwer 1.12 an 2.4 hannen net un der Form eleng ennerscheet ginn.
 - Entitéit-Erstellungspakete iwwer d'Entitéit a säin Typ eraus: si halen all
   Propriétéit vun engem Gefier, dat an de Bléck vum Client kënnt, op eemol, an enger Reiefolleg, déi
-  nëmmen d'Definitiounsdateie ginn (ganz am Sidecar behalen).
+  nëmmen d'Definitiounsdateie ginn (ganz an der Niewendatei behalen).
 - Statesch Kollisiounen (Beem, Haiser), dem opuelende Spiller säin eegent Zielen a
   seng Physikpakete.
 - Chat-Kommandonummere als Nimm: d'Nummeréierung ass dem Spill seng a

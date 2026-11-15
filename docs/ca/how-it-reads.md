@@ -31,7 +31,7 @@ files. Les files d'un vehicle s'aturen a la seva mort.
 **La resta del flux** (salut, trets, traçadors, explosions, impactes, angles de canó, actualitzacions de
 l'arena) són crides a mètodes i canvis de propietats dels vehicles i de l'avatar del client, numerats pels
 fitxers de definició del joc, que canvien amb els pedaços (1.12 i 2.4 els numeren de manera diferent). Cada
-una es troba per la forma dels seus arguments i com s'enganxen entre ells (vegeu
+una es troba per la forma dels seus arguments i com s'enganxen entre ells (mira
 [`heat3d_ext_wot/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/heat3d_ext_wot/stream.py)), i
 els números trobats són al `decoded` del document de partida. El xat, el mode de càmera i els esdeveniments
 propis del client són paquets propis. Les actualitzacions de l'arena i els esdeveniments del client són

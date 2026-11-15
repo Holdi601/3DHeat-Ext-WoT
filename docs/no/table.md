@@ -23,11 +23,11 @@ search_exclude: true
 | `battleTime` | sekunder siden slaget startet; negativ under nedtellingen |
 | `event` | hva raden er (under) |
 | `player`, `team`, `own` | spillerens navn; lag `1` eller `2`; `1` på opptakspilotens rader |
-| `vehicle`, `type` | tanken slik spillet kaller den (`ussr:R144_K_91`); `tank`, eller `shell` for et sporstoff eller en eksplosjon der skytteren ikke er kjent (ingen spiller) |
+| `vehicle`, `type` | stridsvognen slik spillet kaller den (`ussr:R144_K_91`); `tank`, eller `shell` for et sporstoff eller en eksplosjon der skytteren ikke er kjent (ingen spiller) |
 | `x`, `y`, `z` | meter: x øst, y opp, z nord (spillets egen verden, venstrehendt) |
 | `dirX`, `dirY`, `dirZ` | hvor skroget peker, en enhetsvektor i samme ramme (`dirY` 0: bare retning); på et skudd eller sporstoff der granaten fløy |
 | `turretYaw` | tårnets vinkel fra skrogets retning, radianer, positiv mot høyre |
-| `gunStep` | kanonens hevning som et steg 0-63 mellom kanonens egne grenser (grensene er tankens data, ikke replayens) |
+| `gunStep` | kanonens hevning som et steg 0-63 mellom kanonens egne grenser (grensene er stridsvognens data, ikke replayens) |
 | `other`, `reason` | den andre enheten i en hendelse (dreper, offer, angriper, mål); spillets angrepsårsaksnummer |
 | `value`, `health` | hendelsens tall (skade, skuddserie, granathastighet, zoom, kommando); helse etter en endring |
 | `text` | årsakens navn, en chat-linje, en kameramodus, en kommandonøkkel |

@@ -74,7 +74,7 @@ giver en anden gang:
 - **Liv:** hver tanks sidst læste livsværdi er lig resultaternes; den læste modtagne skade er aldrig mere end
   resultaternes. På 2.4 sendes det dødelige slag mod en tank uden for klientens udsyn ofte ikke.
 - **Træf:** et træfs skade er lig livsændringen på det tidspunkt for næsten hvert træf.
-- **Kanon og tårn:** ved et skud peger hovedets heading plus tårnets drejning ddertil, hvor sporstoffet fløj,
+- **Kanon og tårn:** ved et skud peger hovedets heading plus tårnets drejning dertil, hvor sporstoffet fløj,
   inden for ca. 0,01 rad (median).
 - **Dødsfald og kampens start:** inden for ca. et sekund af, hvad resultaterne og arenaen siger.
 

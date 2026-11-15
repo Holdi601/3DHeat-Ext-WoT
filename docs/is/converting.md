@@ -15,16 +15,16 @@ search_exclude: true
    Eftir það vistar leikurinn hvern bardaga í möppunni `replays` í
    World of Tanks uppsetningunni þinni, til dæmis
    `C:\Games\World_of_Tanks_EU\replays`.
-2. **Opnaðu skipanaglugga** í möppu þar sem niðurstöðurnar mega fara
+2. **Opnaðu skipanalínu** í möppu þar sem niðurstöðurnar mega fara
    ([Áður en þú byrjar](before-you-start.md)).
-3. **Keyrðu breytinn** á upptökuskrár, eða á möppur sem geyma þær:
+3. **Keyrðu umbreytinn** á upptökuskrár, eða á möppur sem geyma þær:
 
    ```bash
    heat3d-wot-replay "C:\Games\World_of_Tanks_EU\replays" -o out
    heat3d-wot-replay a.wotreplay b.wotreplay -o out
    ```
 
-   `out` er búin til í möppunni sem skipanagluggi þinn er í.
+   `out` er búin til í möppunni sem skipanalínan þín er í.
 4. **Lestu það sem hann segir.** Þú ættir að sjá eina línu fyrir hverja upptöku, sem
    endar á töflunni sem var skrifuð.
 5. **Opnaðu niðurstöðuna** í 3DHeat-skoðaranum: `out/<map>/<match>.parquet`
@@ -55,7 +55,7 @@ Valkostirnir eins og forritið prentar þá: [Skipanayfirlit](../cli-reference.m
 
 ## Hvað er skrifað {#what-is-written}
 
-Aðeins lausar skrár: þessi breytir skrifar enga `.3dheat` skrá (skoðarinn getur
+Aðeins lausar skrár: þessi umbreytir skrifar enga `.3dheat` skrá (skoðarinn getur
 pakkað þeim í eina: [Ein skrá á leik](https://holdi601.github.io/3DHeat/container.html)).
 Fyrir hverja upptöku, í `out/<map>/`:
 

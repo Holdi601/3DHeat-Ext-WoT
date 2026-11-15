@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Miten replay luetaan {#how-it-reads-a-replay}
 
-Replay on JSON-lohkojen otsikko ja pelin paketti­virta (formaattihuomiot:
+Replay on JSON-lohkojen otsikko ja pelin pakettivirta (formaattihuomiot:
 [`heat3d_ext_wot/bigworld.py`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/heat3d_ext_wot/bigworld.py)):
 
 - Ensimmäinen lohko selkokielisenä: kartta, asiakasversio, tallentava pelaaja, palvelimen asetukset ja
@@ -18,7 +18,7 @@ Replay on JSON-lohkojen otsikko ja pelin paketti­virta (formaattihuomiot:
   läpäisyt, aiheutettu, vastaanotettu, estetty ja avustettu vahinko, tähystys, kokemus, hopea, saavutukset ...),
   tallentavan pelaajan yksityiskohdat kohteittain, tilit, ottelun kesto, voittaja ja lopetussyy; joissain
   tiloissa ainoa täydellinen luettelo (niiden luettelojen otsikko luettelee vain oman joukkueen).
-- Paketti­virta, zlib-pakattuna ja Blowfish-salattuna pelin mukana tulevalla avaimella, jonka replayt lukevat
+- Pakettivirta, zlib-pakattuna ja Blowfish-salattuna pelin mukana tulevalla avaimella, jonka replayt lukevat
   yhteisön työkalut ovat julkaisseet vuodesta 2013.
 
 **Sijainnit** ovat moottorin sijaintipäivityksiä: ajoneuvon tunnus, sen sijainti ja sen suunta, tunnistettuna

@@ -54,7 +54,7 @@ matyta, jei tai buvo per penkias sekundes nuo jos žūties; kitu atveju 2.x klie
   vien pagal formą tarp 1.12 ir 2.4.
 - Esybės sukūrimo paketai, išskyrus esybę ir jos tipą: jie laiko kiekvieną technikos savybę, kai ji vienu metu įeina į
   kliento matymo lauką, tokia tvarka, kurią duoda tik apibrėžimų failai (pilnai išsaugoti papildomame faile).
-- Statiniai susidūrimai (medžiai, namai), pats įrašantis žaidėjas taikymas ir fizikos paketai.
+- Statiniai susidūrimai (medžiai, namai), įrašančio žaidėjo paties taikymas ir fizikos paketai.
 - Mūšio pokalbio komandų numeriai kaip vardai: numeravimas yra žaidimo ir keičiasi; rungtynių dokumente
   išsaugomi kiekvienos komandos argumentai, tarp jų jos raktas, kai jis yra (`ATTACK_ENEMY`, ...).
 - Atakos priežastys virš 5: rašomos tik kaip skaičiai.

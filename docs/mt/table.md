@@ -27,7 +27,7 @@ Ringiela waħda għal kull kampjun jew avveniment, f'`<match>.parquet`: 38 kolon
 | `x`, `y`, `z` | metri: x lvant, y 'il fuq, z tramuntana (id-dinja tal-logħba nnifisha, xellugija) |
 | `dirX`, `dirY`, `dirZ` | fejn tipponta l-iskoss, vettur unità fl-istess qafas (`dirY` 0: direzzjoni biss); fuq sparatura jew tracer fejn tajjar il-qoxra |
 | `turretYaw` | l-angolu tat-turret mid-direzzjoni tal-iskoss, radjani, pożittiv lejn il-lemin |
-| `gunStep` | l-elevazzjoni tal-kanun bħala pass 0-63 bejn il-limiti tal-kanun stess (il-limiti huma d-data tat-tank, mhux tar-ripetizzjoni) |
+| `gunStep` | l-elevazzjoni tal-kanun bħala pass 0-63 bejn il-limiti tal-kanun stess (il-limiti huma d-dejta tat-tank, mhux tar-ripetizzjoni) |
 | `other`, `reason` | il-vettura l-oħra ta' avveniment (qattiel, vittma, attakkant, mira); in-numru tar-raġuni tal-attakk tal-logħba |
 | `value`, `health` | in-numru tal-avveniment (ħsara, sensiela, veloċità tal-qoxra, zoom, kmand); is-saħħa wara bidla |
 | `text` | l-isem tar-raġuni, linja taċ-chat, modalità tal-kamera, ċavetta ta' kmand |

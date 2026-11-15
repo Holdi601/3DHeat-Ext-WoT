@@ -10,7 +10,7 @@ search_exclude: true
 # Vollstännegkeet {#completeness}
 
 Näischt an engem Replay gëtt ewechgeheit. Wat de Konverter liest, kënnt an d'
-Tabell an d'Match-Dokument; all anert Stéck gëtt ganz am Sidecar
+Tabell an d'Match-Dokument; all anert Stéck gëtt ganz an der Niewendatei
 `<match>.messages.parquet` behalen; an dem Match-Dokument säin
 `selfCheck.completeness` zielt, wat aus all Aart Stéck ginn ass. Dat ass
 d'Regel, déi all 3DHeat-Konverter deelen:
@@ -26,8 +26,8 @@ Fir all Aart Stéck gëtt `selfCheck.completeness.types`:
 |---|---|
 | `seen` | wéi vill de Replay hält |
 | `decoded` | ganz gelies |
-| `partial` | zum Deel gelies, a ganz am Sidecar behalen |
-| `raw` | nëmmen ganz am Sidecar behalen, net gelies |
+| `partial` | zum Deel gelies, a ganz an der Niewendatei behalen |
+| `raw` | nëmmen ganz an der Niewendatei behalen, net gelies |
 | `lost` | verluer: émmer `0` |
 
 D'Aarte sinn déi vum Replay selwer: `block 0` (den Header), `block 1` (d'
@@ -38,7 +38,7 @@ Erstellungspakete ginn; `selfCheck.entities.roles` seet, wéi ee dem
 opuelende Spiller säin Avatar ass a wéi eng d'Gefierer. Eng Aart, déi keen kannt huet,
 erschéngt mat hirer Zuel.
 
-## De Sidecar {#the-sidecar}
+## D'Niewendatei {#the-sidecar}
 
 | Kolonn | Wat |
 |---|---|
@@ -59,13 +59,13 @@ D'Zeile sinn no Paket, Method, Entitéit an Zäit sortéiert.
 - **Entitéiten** (`entities`): wéini all an de Bléck vum Client koum a fortgaang ass.
   Kee Panzer huet eng Positioun tëscht dem Fortgoen an dem Zréckkommen.
 - **D'Versioun am Stroum** (`streamVersion`): déiselwecht wéi déi vum Header.
-- **D'Ziel vum opuelende Spiller** (Paket 38): eng Richtung, am `decoded` vum
-  Sidecar (`forward`); bei de Schëss vum Spiller ass et e Bruchdeel vun engem Grad
+- **D'Ziel vum opuelende Spiller** (Paket 38): eng Richtung, am `decoded` vun der
+  Niewendatei (`forward`); bei de Schëss vum Spiller ass et e Bruchdeel vun engem Grad
   vun deem, wou d'Granat geflunn ass.
 
 Alles anescht, wat gelies gëtt (Liewen, Treffer, Schëss, Leuchtspuren, Explosiounen, Kanounwénkel,
 Arena-Updates, Chat, Kameramoduse, Client-Evenementer, Positiounen), ass `partial`:
-an der Tabell oder dem Match-Dokument, a ganz am Sidecar behalen.
+an der Tabell oder dem Match-Dokument, a ganz an der Niewendatei behalen.
 
 **Behalen, awer net gelies** (`raw`), déi gréissten Aarten: Positiouns-Updates, déi net an
 der Tabell sinn (dee vum Avatar, no engem Panzerdoud, Entitéiten, déi net an der Roster sinn),

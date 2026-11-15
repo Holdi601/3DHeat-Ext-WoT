@@ -33,7 +33,7 @@ generada a partir del codi).
 | `text` | el nom de la raó, una línia de xat, un mode de càmera, la clau d'una ordre |
 | `shot` | l'identificador de l'obús: un tret, el seu traçador i la seva explosió el comparteixen |
 | `entity` | l'identificador del vehicle a la repetició |
-| `hitComponent`, `hitCode`, `hitU/V/W`, `hitExitU/V/W`, `hitDirX/Y/Z` | només a les files `struck`: on va impactar un obús (vegeu l'esdeveniment `struck` més avall) |
+| `hitComponent`, `hitCode`, `hitU/V/W`, `hitExitU/V/W`, `hitDirX/Y/Z` | només a les files `struck`: on va impactar un obús (mira l'esdeveniment `struck` més avall) |
 | `pitch`, `roll` | en una posició, la inclinació del casc (radians, positiu amb el morro avall) i el roll, tal com els envia el joc |
 
 | `event` | A la fila de | Què és |

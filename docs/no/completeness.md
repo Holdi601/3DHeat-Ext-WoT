@@ -13,7 +13,7 @@ Ingenting i en replay kastes. Det konverteren leser, går inn i tabellen og
 kampdokumentet; alt annet beholdes helt i sidefilen
 `<kamp>.messages.parquet`; og kampdokumentets
 `selfCheck.completeness` teller hva som ble av hver type post. Dette er regelen alle
-3DHeat-konverterere deler: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
+3DHeat-konvertere deler: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
 
 ![Selvkontrollen til en syntetisk replay: hver post sett, lest, beholdt eller tapt](../assets/img/completeness.svg)
 
@@ -51,10 +51,10 @@ Rader sorteres etter pakke, metode, entitet og tid.
 
 ## Hva som leses, og hvordan det ble kontrollert {#what-is-read-and-how-it-was-checked}
 
-- **Stigning og rull** for hver posisjon: stigningen er minus helningen på tankens egen bane
-  mens den kjører forover; to tanker på samme sted med én retning har samme rull, med motsatte
+- **Stigning og rull** for hver posisjon: stigningen er minus helningen på stridsvognens eget spor
+  mens den kjører forover; to stridsvogner på samme sted med én retning har samme rull, med motsatte
   retninger motsatt rull.
-- **Entiteter** (`entities`): når hver kom inn i klientens syn og forlot det. Ingen tank har
+- **Entiteter** (`entities`): når hver kom inn i klientens syn og forlot det. Ingen stridsvogn har
   en posisjon mellom at den forlot synet og at den kom tilbake.
 - **Versjonen i strømmen** (`streamVersion`): den samme som headerens.
 - **Opptakspilotens sikte** (pakke 38): en retning, i sidefilens `decoded` (`forward`); ved
@@ -65,7 +65,7 @@ arenaoppdateringer, chat, kameramodi, klienthendelser, posisjoner) er `partial`:
 tabellen eller kampdokumentet, og beholdt helt i sidefilen.
 
 **Beholdt men ikke lest** (`raw`), de største typene: posisjonsoppdateringer som ikke er i
-tabellen (avatarens, etter en tanks død, entiteter som ikke er i listen), pakkene 26, 28, 29,
+tabellen (avatarens, etter en stridsvogns død, entiteter som ikke er i listen), pakkene 26, 28, 29,
 31, 36, 50, 54 og 57, noen hyppige egenskaper for kjøretøy og avatar, hver metode og egenskap
 uten leser (blant dem skademodul, mannskap og forbruksvarer), og egenskapene til entitetsopprettelser.
 

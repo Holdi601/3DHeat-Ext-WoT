@@ -78,7 +78,7 @@ u consumables), u l-proprjetajiet tal-ħolqien tal-entitajiet.
   lil klijent wieħed.
 - L-ismijiet tat-tipi tal-entitajiet, tal-metodi u tal-proprjetajiet: jinsabu fil-fajls
   tad-definizzjoni tal-logħba, mhux fir-ripetizzjoni. In-numri jinżammu.
-- L-elevazzjoni tal-kanun f'gradi u kull ħaġa oħra li teħtieġ id-data tat-tankijiet stess
+- L-elevazzjoni tal-kanun f'gradi u kull ħaġa oħra li teħtieġ id-dejta tat-tankijiet stess
   mill-fajls tal-logħba.
 
 ---

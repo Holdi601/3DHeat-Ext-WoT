@@ -49,9 +49,9 @@ Eilutės surūšiuotos pagal paketą, metodą, esybę ir laiką.
 
 ## Ką skaitome ir kaip tai patikrinta {#what-is-read-and-how-it-was-checked}
 
-- **Posūkis ir ritimas** kiekvienos pozicijos: kilimo kampas yra tanko paties kelio nuolydis, kai jis važiuoja
-  pirmyn; du tankai vienoje vietoje su viena kryptimi turi tokį patį ritimą, o su priešingomis kryptimis -
-  priešingus ritimus.
+- **Kėlimas ir posūkis** kiekvienos pozicijos: kėlimas yra tanko paties kelio nuolydis su priešingu ženklu, kai jis
+  važiuoja pirmyn; du tankai vienoje vietoje su viena kryptimi turi tokį patį posūkį, o su priešingomis kryptimis -
+  priešingus posūkius.
 - **Esybės** (`entities`): kada kiekviena pateko į kliento matymo lauką ir kada iš jo išėjo. Joks tankas nėra
   pozicijoje tarp išėjimo ir grįžimo.
 - **Versija srautuose** (`streamVersion`): tokia pati kaip antraštės.

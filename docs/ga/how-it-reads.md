@@ -15,7 +15,7 @@ Is ceanntásc de bhloic JSON agus sruth paicéad an chluiche athsheinm (nótaí 
 - An dara ceann, nuair a mhair an taifeadadh go dtí an deireadh: scáileán na dtorthaí - líne gach feithicle (lámhaigh, buillí, treáiteacha, damáiste a rinneadh, a fuarthas, a blocáladh agus a chuidíodh, aimsiú, xp, creidmheasanna, éachtaí...), sonraí an imreora taifeadta in aghaidh na sprice, na cuntais, fad an chluiche, buaiteoir agus cúis chríochnaithe; i roinnt módanna an t-aon rolla iomlán (ní liostaíonn ceanntásc na liostaí sin ach an fhoireann féin).
 - An sruth paicéad, comhbhrúite le zlib agus criptithe le Blowfish le heochair a iompraíonn an cluiche, a bhfuil foilsithe ag uirlisí an phobail a léann na comhaid seo ó 2013.
 
-Is iad **suíomhanna** nuashonruithe suímh an einsin: id feithicle, a suíomh agus a heading, aimsithe de réir a gcruth seachas a n-uimhir phaicéid, mar sin ní fholmhaíonn paiste a athuimhríonn iad an tábla. Is iad an méid a dúradh leis an gcliant taifeadta: a fhoireann féin ar fud an chatha, namhaid ach amháin nuair a aimsíodh é (nó laistigh de raon an chliaint). Níl aon sraitheanna ag feithicil nár aimsíodh riamh. Stopann sraitheanna feithicle ag a bás.
+Is iad **suíomhanna** nuashonruithe suímh an einsin: id feithicle, a suíomh agus a threo, aimsithe de réir a gcruth seachas a n-uimhir phaicéid, mar sin ní fholmhaíonn paiste a athuimhríonn iad an tábla. Is iad an méid a dúradh leis an gcliant taifeadta: a fhoireann féin ar fud an chatha, namhaid ach amháin nuair a aimsíodh é (nó laistigh de raon an chliaint). Níl aon sraitheanna ag feithicil nár aimsíodh riamh. Stopann sraitheanna feithicle ag a bás.
 
 **An chuid eile den sruth** - sláinte, lámhaigh, lorgairí, pléascanna, buillí, uillinneacha gunna, nuashonruithe airéine - is glaonna modha agus athruithe airíonna na bhfeithiclí agus avatar an chliaint iad, uimhrithe ag comhaid sainmhínithe an chluiche, a athraíonn le paistí (uimhríonn 1.12 agus 2.4 iad ar bhealach difriúil). Aimsítear gach ceann de réir chruth a argóintí agus conas a cheanglaíonn siad - féach [`heat3d_ext_wot/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/heat3d_ext_wot/stream.py) - agus tá na huimhreacha a fuarthas i `decoded` na cáipéise cluiche. Is paicéid dá gcuid féin iad comhrá, mód an cheamara agus imeachtaí féin an chliaint. Is pickles Python iad nuashonruithe airéine agus imeachtaí cliaint; léann léitheoir iad a iompaíonn gach aicme a ainmníonn siad ina n-ionadaí támh agus nach rithfidh aon rud.
 
@@ -39,11 +39,11 @@ Tá an méid a dúradh leis an gcliant iomlán dá fhoireann féin agus páirtea
 
 Seiceáladh an léamh ar athsheinmeanna poiblí de chliaint 1.12 agus 2.4, gach luach i gcoinne ruda a thugann an athsheinm an dara huair:
 
-- **Suíomhanna:** tá rian ag gach tanc a chonacthas riamh ag deich sampla sa soicind; fanann luasanna laistigh den méid is féidir le tanc; aontaíonn an heading le treo an taistil go dtí thart ar 0.02 rad; nuair a thugann na torthaí áit báis, tá an áit a léadh anseo laistigh de chúpla méadar de.
+- **Suíomhanna:** tá rian ag gach tanc a chonacthas riamh ag deich sampla sa soicind; fanann luasanna laistigh den méid is féidir le tanc; aontaíonn an treo le treo an taistil go dtí thart ar 0.02 rad; nuair a thugann na torthaí áit báis, tá an áit a léadh anseo laistigh de chúpla méadar de.
 - **An t-imreoir taifeadta:** is ionann na lámhaigh agus an damáiste a rinneadh a léadh agus luachanna na dtorthaí, ar gach athsheinm a seiceáladh.
 - **Sláinte:** is ionann sláinte dheireanach gach tanc a léadh agus ceann na dtorthaí; ní bhíonn an damáiste a fuarthas a léadh níos mó ná ceann na dtorthaí. Ar 2.4 ní sheoltar an buille marfach go minic chuig tanc lasmuigh de radharc an chliaint.
 - **Buillí:** is ionann damáiste buille agus an t-athrú sláinte ag an nóiméad sin do bheagnach gach buille.
-- **Tuirlingt:** ag lámhaigh, díríonn heading an choirp móide yaw na tuirlinge ar an áit ar eitil an lorgaire, laistigh de thart ar 0.01 rad (airmheán).
+- **Tuirlingt:** ag lámhaigh, díríonn treo an choirp móide yaw na tuirlinge ar an áit ar eitil an lorgaire, laistigh de thart ar 0.01 rad (airmheán).
 - **Básanna agus tús an chatha:** laistigh de thart ar shoicind den méid a deir na torthaí agus an airéine.
 
 Tógann na tástálacha athsheinmeanna sa leagan amach céanna, mar sin ní choinnítear aon athsheinm fíor sa stóras seo.
