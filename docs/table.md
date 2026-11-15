@@ -1,11 +1,12 @@
 ---
 title: The table
-nav_order: 4
+nav_order: 5
 ---
 
 # The table
 
-One row per sample or event, in `<match>.parquet`.
+One row per sample or event, in `<match>.parquet`: 38 columns
+([Column list](columns.md), generated from the code).
 
 ![The table of a synthetic replay, summarised](assets/img/table.svg)
 
@@ -13,7 +14,7 @@ One row per sample or event, in `<match>.parquet`.
 
 | Column | What |
 |---|---|
-| `match`, `map` | the battle's id; the map's id (`01_karelia`) |
+| `match`, `map` | the battle's id; the map's id (`99_testmap` in the pictures) |
 | `time` | seconds since the recording began (the countdown is in it) |
 | `battleTime` | seconds since the battle began; negative during the countdown |
 | `event` | what the row is (below) |
@@ -28,6 +29,7 @@ One row per sample or event, in `<match>.parquet`.
 | `text` | the reason's name, a chat line, a camera mode, a command's key |
 | `shot` | the shell's id: a shot, its tracer and its explosion share it |
 | `entity` | the vehicle's id in the replay |
+| `hitComponent`, `hitCode`, `hitU/V/W`, `hitExitU/V/W`, `hitDirX/Y/Z` | on `struck` rows only: where a shell struck (see the `struck` event below) |
 | `pitch`, `roll` | on a position, the hull's pitch (radians, positive nose down) and roll, as the game sends them |
 
 | `event` | On the row of | What |

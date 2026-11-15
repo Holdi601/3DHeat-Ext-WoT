@@ -208,3 +208,11 @@ def test_a_vehicle_only_the_results_name_is_still_named():
     m = read(bw.encipher([head, res], stream(), KEY))
     assert {p["name"] for p in m.summary["players"]} == {"me", "friend", "foe"}
     assert m.summary["kills"][0]["victim"] == "foe" and "foe" in m.rows["player"]
+
+
+def test_version_names_the_command(capsys):
+    import pytest as _pytest
+    from heat3d_ext_wot import __version__, cli as _cli
+    with _pytest.raises(SystemExit):
+        _cli.main(["--version"])
+    assert capsys.readouterr().out.strip() == f"heat3d-wot-replay {__version__}"

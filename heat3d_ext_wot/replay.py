@@ -93,7 +93,7 @@ COLUMNS = {
 }  # fmt: skip
 
 #: A position's pitch and roll as the packet has them, radians: pitch positive nose down, roll as sent. Checked
-#: against the ground (see the README): the pitch is minus the slope the vehicle climbs; two vehicles at one spot
+#: against the ground (docs/completeness.md): the pitch is minus the slope the vehicle climbs; two vehicles at one spot
 #: with one heading have the same roll, with opposite headings opposite rolls.
 COLUMNS.update(pitch="f", roll="f")
 HINTS["columns"]["extra"] += ["pitch", "roll"]

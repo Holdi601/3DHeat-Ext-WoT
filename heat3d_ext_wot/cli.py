@@ -45,7 +45,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("replays", nargs="+", help=f"{SUFFIX} files, or folders searched for them")
     ap.add_argument("-o", "--out", required=True, help="folder to write into (a folder per map inside)")
     ap.add_argument("--force", action="store_true", help="convert again what is already written")
-    ap.add_argument("--version", action="version", version=__version__)
+    ap.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     args = ap.parse_args(argv)
     files = find(args.replays)
     if not files:

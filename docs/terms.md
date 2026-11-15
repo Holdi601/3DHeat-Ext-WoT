@@ -1,6 +1,6 @@
 ---
 title: Terms and licence
-nav_order: 8
+nav_order: 9
 ---
 
 # Terms and licence
@@ -45,7 +45,7 @@ common knowledge among replay tools - evido/wotreplay-parser (BSD-3-Clause)
 documents them; no code was taken from it or from any other project.
 
 `bigworld.py` and `table.py` are the same files as in the World of Warships
-converter (`../wows-replay`); change both together.
+converter ([3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs)); change both together.
 
 ---
 
