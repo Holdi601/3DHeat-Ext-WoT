@@ -30,10 +30,10 @@ véhicule jamais repéré n'a aucune ligne. Les lignes d'un véhicule s'arrêten
 
 **Le reste du flux** - points de vie, tirs, traceurs, explosions, impacts, angles de canon, mises à jour de
 l'arène - sont des appels de méthodes et des changements de propriétés des véhicules et de l'avatar du client,
-numérotés par les fichiers de définition du jeu, qui changent avec les patchs (les 1.12 et 2.4 ne les numérotent
+numérotés par les fichiers de définition du jeu, qui changent avec les patchs (les versions 1.12 et 2.4 ne les numérotent
 pas de la même façon). Chacun est trouvé par la forme de ses arguments et par la façon dont ils s'enchaînent -
 voir [`heat3d_ext_wot/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoT/blob/main/heat3d_ext_wot/stream.py) -
-et les numéros trouvés figurent dans le `decoded` du document de match. Le chat, le mode de caméra et les
+et les numéros trouvés figurent dans le `decoded` du document de partie. Le chat, le mode de caméra et les
 événements propres au client sont des paquets à part. Les mises à jour de l'arène et les événements du client
 sont des pickles Python ; ils sont lus par un lecteur qui transforme chaque classe qu'ils nomment en une
 coquille inerte et n'exécute rien.
@@ -48,7 +48,7 @@ a commencé ; dans un replay qui n'en a pas, c'est le premier instant où un vé
 qui a mis fin au véhicule, sinon le début de la bataille plus le `lifeTime` de la victime tiré des résultats
 (en secondes entières). Le lieu est l'endroit où la victime a été vue en dernier, lorsque c'était moins de cinq
 secondes avant sa mort ; sinon, sur les clients 2.x, le lieu que donnent les résultats (x et z, sans hauteur),
-dans le document de match seulement. Un enregistrement arrêté avant la fin n'a aucune mort.
+dans le document de partie seulement. Un enregistrement arrêté avant la fin n'a aucune mort.
 
 **Non lu :**
 
@@ -61,8 +61,8 @@ dans le document de match seulement. Un enregistrement arrêté avant la fin n'a
   d'un véhicule qui entre dans la vue du client d'un coup, dans un ordre que seuls les fichiers de définition
   donnent (conservés en entier dans le fichier annexe).
 - Les collisions statiques (arbres, maisons), la visée propre du joueur qui enregistre et ses paquets de physique.
-- Les numéros des commandes de chat de bataille en noms : la numérotation est celle du jeu et elle change ; le
-  document de match conserve les arguments de chaque commande, dont sa clé lorsqu'elle en a une (`ATTACK_ENEMY`, ...).
+- Les numéros des commandes de chat de bataille convertis en noms : la numérotation est celle du jeu et elle change ; le
+  document de partie conserve les arguments de chaque commande, dont sa clé lorsqu'elle en a une (`ATTACK_ENEMY`, ...).
 - Les raisons d'attaque supérieures à 5 : écrites seulement en nombres.
 
 ## Comment la lecture a été vérifiée {#how-the-reading-was-checked}

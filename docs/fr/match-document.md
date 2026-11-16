@@ -1,5 +1,5 @@
 ---
-title: Le document de match
+title: Le document de partie
 nav_order: 6
 lang: "fr"
 source: match-document.md
@@ -7,12 +7,12 @@ source_hash: "177568e76e30"
 nav_exclude: true
 search_exclude: true
 ---
-# Le document de match {#the-match-document}
+# Le document de partie {#the-match-document}
 
 `<match>.match.json` contient tout ce que dit le replay et qui n'est pas une ligne de la table.
-L'onglet Match de la visionneuse le lit. (Le code l'appelle le résumé.)
+L'onglet Match du visualiseur le lit. (Le code l'appelle le résumé.)
 
-![Le début d'un document de match synthétique, et ses clés](../assets/img/match-document.svg)
+![Le début d'un document de partie synthétique, et ses clés](../assets/img/match-document.svg)
 
 ## La bataille {#the-battle}
 
@@ -31,7 +31,7 @@ L'onglet Match de la visionneuse le lit. (Le code l'appelle le résumé.)
 | `recordingSeconds` | la durée de l'enregistrement en secondes |
 | `positionPacket`, `hz`, `positions` | le numéro de paquet d'où viennent les positions, les échantillons par seconde, les lignes de position |
 | `events` | le nombre de lignes de la table pour chaque événement |
-| `units` | `metres; x east, y up, z north` (mètres ; x vers l'est, y vers le haut, z vers le nord) |
+| `units` | `metres; x east, y up, z north` |
 | `decoded` | les numéros de méthode et de paquet trouvés pour chaque type de message |
 
 ## Joueurs et événements {#players-and-events}

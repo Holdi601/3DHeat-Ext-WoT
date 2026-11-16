@@ -44,7 +44,7 @@ La lettura è stata verificata su replay pubblici dei client 1.12 e 2.4, ogni va
 - **Il giocatore che registra:** i colpi e il danno inflitto letti sono uguali ai valori dei risultati, su ogni replay controllato.
 - **Salute:** l'ultima lettura della salute di ogni carro è uguale a quella dei risultati; il danno subito letto non è mai superiore a quello dei risultati. Sul 2.4 il colpo mortale a un carro fuori dalla vista del client spesso non viene inviato.
 - **Colpi:** il danno di un colpo è uguale alla variazione di salute in quel momento per quasi ogni colpo.
-- **Torretta:** a un colpo, il rilevamento dello scafo più l'imbardata della torretta punta dove è volato il traccia-tiro, entro circa 0,01 rad (mediana).
+- **Torretta:** a un colpo, il rilevamento dello scafo più l'imbardata della torretta punta dove è volato il tracciante, entro circa 0,01 rad (mediana).
 - **Morti e inizio della battaglia:** entro circa un secondo da ciò che dicono i risultati e l'arena.
 
 I test costruiscono i replay con lo stesso layout, quindi nessun replay reale è conservato in questo repository.
