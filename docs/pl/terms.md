@@ -3,39 +3,26 @@ title: Warunki i licencja
 nav_order: 9
 lang: "pl"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Warunki i licencja {#terms-and-licence}
 
-## Warunki Wargaming {#wargamings-terms}
+## Co czyta {#what-it-reads}
 
-Przeczytane 2026-11-07, EULA Wargaming w wersji 14 (obowiązuje od 10 kwietnia 2024, wymieniona
-jako aktualna):
+Konwerter czyta pliki powtórek, które gra zapisała na Twoim własnym
+komputerze, po bitwie i poza grą. Niczego w grze nie zmienia, nie łączy się z
+żadnym serwerem i niczego nie pokazuje w trakcie bitwy. Nic z gry nie jest z
+nim dostarczane ani dalej rozpowszechniane: żadne zasoby gry, żaden kod gry,
+żadne biblioteki DLL. To, co zapisuje, zostaje na Twoim komputerze.
 
-- 5.3 (b): bez pisemnej zgody nie wolno "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): zabronione jest "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat nie jest powiązany z Wargaming ani przez Wargaming zatwierdzony. World
+of Tanks oraz powiązane nazwy i znaki towarowe należą do ich właścicieli.
 
-Lista zakazanych modów World of Tanks dotyczy samej bitwy: modów, które
-"reveal the position of enemies in a way not included in the client", botów celowniczych,
-zegarów przeładowania i podobnych. Ani EULA, ani ta lista nie wspominają o
-replayach.
-
-Co robi ten konwerter: czyta plik, który gra zapisała, po bitwie, poza grą. Nic nie zmienia w grze, nie rozmawia z żadnym serwerem i
-niczego nie pokazuje podczas bitwy. Odszyfrowuje strumień kluczem gry, co punkty 5.3 (b) i 12.1 (p) mogą
-obejmować. Korzystanie z niego to decyzja użytkownika; dlatego jest to osobny pakiet.
+Posiadacze praw: prosimy o otwarcie issue pod adresem
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - odpowiadamy szybko i na
+prośbę usuwamy wszystko.
 
 ## Licencja i źródła {#licence-and-sources}
 

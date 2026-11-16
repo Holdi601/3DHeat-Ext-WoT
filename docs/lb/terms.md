@@ -3,40 +3,27 @@ title: "Konditiounen a Lizenz"
 nav_order: 9
 lang: "lb"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Konditiounen a Lizenz {#terms-and-licence}
 
-## D'Konditioune vu Wargaming {#wargamings-terms}
+## Wat en liest {#what-it-reads}
 
-Gelies de 2026-11-07, Wargaming EULA Versioun 14 (gëlteg vum 10. Abrëll 2024 un, als
-aktuell opgelëscht):
+De Konverter liest Replay-Fichieren, déi d'Spill op Ärem eegene Computer
+geschriwwen huet, nom Gefecht a baussent dem Spill. En ännert näischt am
+Spill, schwätzt mat kengem Server a weist während engem Gefecht näischt un.
+Näischt aus dem Spill gëtt mat him geliwwert oder weiderverdeelt: keng
+Spilldaten, kee Spillcode, keng DLLen. Wat e schreift, bleift op Ärem
+Computer.
 
-- 5.3 (b): wann et net schrëftlech erlaabt ass, dierft Dir net "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): verbueden ass "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat ass net mat Wargaming verbonnen an net vu Wargaming ënnerstëtzt. World
+of Tanks an déi verbonnen Nimm a Marken gehéieren hiren Eegentümer.
 
-D'Lëscht vun de verbuedene Mods vu World of Tanks geet ëm d'Gefecht selwer: Mods, déi
-"reveal the position of enemies in a way not included in the client", Aimbots, Nuelueszäitgeber
-an Ähnleches. Weder d'EULA nach dës Lëscht nennt Replays.
-
-Wat dëse Konverter mécht: en liest eng Datei, déi d'Spill geschriwwen huet, nom Gefecht,
-ausserhalb vum Spill. En ännert näischt am Spill, schwätzt mat kengem Server a
-weist näischt wärend engem Gefecht. En dechiffréiert de Stroum mam Schlëssel vum Spill,
-wat 5.3 (b) an 12.1 (p) esou gelies ka ginn, datt se et ofdecken. Et ze benotzen ass dem Benotzer seng
-Entscheedung; dofir ass et e separat Package.
+Rechtsinhaber: maacht en Issue op ënner
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - mir äntweren séier a
+läschen op Ufro alles.
 
 ## Lizenz a Quellen {#licence-and-sources}
 

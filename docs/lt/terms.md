@@ -3,38 +3,26 @@ title: Sąlygos ir licencija
 nav_order: 9
 lang: "lt"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Sąlygos ir licencija {#terms-and-licence}
 
-## Wargaming sąlygos {#wargamings-terms}
+## Ką jis skaito {#what-it-reads}
 
-Perskaityta 2026-11-07, Wargaming EULA 14 versija (galioja nuo 2024 m. balandžio 10 d., nurodyta kaip dabartinė):
+Konverteris skaito įrašų failus, kuriuos žaidimas įrašė jūsų pačių
+kompiuteryje, po mūšio ir už žaidimo ribų. Jis nieko nekeičia žaidime,
+nesijungia prie jokio serverio ir mūšio metu nieko nerodo. Su juo nepateikiama
+ir neplatinama nieko iš žaidimo: jokių žaidimo išteklių, jokio žaidimo kodo,
+jokių DLL. Tai, ką jis įrašo, lieka jūsų kompiuteryje.
 
-- 5.3 (b): jei raštu neleista, negalite "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): draudžiama "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat nėra susijęs su Wargaming ir nėra Wargaming patvirtintas. World of
+Tanks ir susiję pavadinimai bei prekių ženklai priklauso jų savininkams.
 
-World of Tanks draudžiamų modifikacijų sąrašas susijęs su pačiu mūšiu: modifikacijos, kurios
-"reveal the position of enemies in a way not included in the client", taikymo robotai,
-perkrovimo laikmačiai ir panašiai. Nei EULA, nei tas sąrašas nemini įrašų.
-
-Ką daro šis konverteris: jis skaito failą, kurį žaidimas įrašė po mūšio, žaidimo ribų išorėje.
-Jis nieko nekeičia žaidime, su jokiu serveriu nesikalba ir mūšio metu nieko nerodo. Tiesa, jis iššifruoja srautą
-žaidimo raktu, ir 5.3 (b) bei 12.1 (p) galima aiškinti taip, kad tai patenka. Naudoti jį yra vartotojo sprendimas;
-todėl jis yra atskiras paketas.
+Teisių turėtojai: atidarykite issue adresu
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - atsakome greitai ir
+paprašius pašaliname bet ką.
 
 ## Licencija ir šaltiniai {#licence-and-sources}
 

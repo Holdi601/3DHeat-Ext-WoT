@@ -3,24 +3,19 @@ title: "名詞與授權"
 nav_order: 9
 lang: "zh-Hant"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # 條款與授權 {#terms-and-licence}
 
-## Wargaming 的條款 {#wargamings-terms}
+## 它讀取什麼 {#what-it-reads}
 
-於 2026-11-07 閱讀，Wargaming EULA 第 14 版（自 2024 年 4 月 10 日生效，目前列為現行版本）：
+此轉換器在戰鬥結束後、在遊戲之外，讀取遊戲在你自己的電腦上寫下的回放檔案。它不改變遊戲中的任何東西，不與任何伺服器通訊，戰鬥中也不顯示任何內容。它不附帶也不再散布遊戲中的任何東西：沒有遊戲資源，沒有遊戲程式碼，沒有 DLL。它寫出的內容留在你的電腦上。
 
-- 5.3 (b)：除非經書面授權，你不得 "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content"。
-- 12.1 (k)：禁止 "Creating, using, making available, or distributing any unauthorized software or tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication between such software and Wargaming."
-- 12.1 (l)："... any software designed to modify a Product and change the user experience ("mods") unless expressly permitted by Wargaming"。
-- 12.1 (p)："Circumventing or bypassing enforcement and security measures implemented by Wargaming"。
+3DHeat 與 Wargaming 沒有關聯，也未獲得 Wargaming 的認可。World of Tanks 及相關名稱和商標歸其各自所有者所有。
 
-World of Tanks 的禁止模組清單針對的是戰鬥本身：例如「以客戶端未包含的方式揭露敵人位置」的模組、瞄準機器人、裝填計時器等。條款與該清單都沒有提到回放。
-
-此轉換器的作用：它讀取遊戲在戰鬥結束後寫出的檔案，且是在遊戲之外進行的。它不會更改遊戲中的任何東西，不與任何伺服器通訊，也不會在戰鬥中顯示任何東西。它確實會使用遊戲的金鑰解密串流，而 5.3 (b) 與 12.1 (p) 可被解讀為涵蓋此行為。使用它是使用者自己的決定；這也是它被做成獨立套件的原因。
+權利人：請在 <https://github.com/Holdi601/3DHeat-Ext-WoT/issues> 提交 issue - 我們會盡快回覆，並應要求移除任何內容。
 
 ## 授權與來源 {#licence-and-sources}
 

@@ -3,34 +3,26 @@ title: "Koşullar ve lisans"
 nav_order: 9
 lang: "tr"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Koşullar ve lisans {#terms-and-licence}
 
-## Wargaming'in koşulları {#wargamings-terms}
+## Ne okur {#what-it-reads}
 
-2026-11-07 tarihinde okundu, Wargaming EULA sürüm 14 (10 Nisan 2024 tarihinden geçerli, güncel olarak listeli):
+Dönüştürücü, oyunun kendi bilgisayarınıza yazdığı tekrar dosyalarını savaştan
+sonra ve oyunun dışında okur. Oyunda hiçbir şeyi değiştirmez, hiçbir sunucuyla
+konuşmaz ve savaş sırasında hiçbir şey göstermez. Oyundan hiçbir şey onunla
+birlikte sunulmaz veya yeniden dağıtılmaz: oyun varlığı yok, oyun kodu yok,
+DLL yok. Yazdıkları sizin bilgisayarınızda kalır.
 
-- 5.3 (b): yazılı izin olmadan "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content" yapmamalısınız.
-- 12.1 (k): yasak olan "Creating, using, making available, or distributing any unauthorized software or tools,
-  including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts
-  with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication
-  between such software and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user experience ("mods") unless expressly
-  permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures implemented by Wargaming".
+3DHeat, Wargaming ile bağlantılı değildir ve Wargaming tarafından
+onaylanmamıştır. World of Tanks ve ilgili adlar ile ticari markalar
+sahiplerine aittir.
 
-World of Tanks'in yasaklı modlar listesi savaşın kendisiyle ilgilidir: "reveal the position of enemies in a way not
-included in the client" yapan modlar, nişan botları, yeniden yükleme zamanlayıcıları ve benzerleri. Ne EULA ne de
-bu liste tekrarlardan söz eder.
-
-Bu dönüştürücü ne yapar: oyunun yazdığı bir dosyayı, savaştan sonra, oyunun dışında okur. Oyunda hiçbir şeyi
-değiştirmez, hiçbir sunucuyla konuşmaz ve savaş sırasında hiçbir şey göstermez. Akışı oyunun anahtarıyla
-deşifre eder; bunun 5.3 (b) ve 12.1 (p) kapsamında okunabileceği düşünülebilir. Kullanmak kullanıcının kararıdır;
-bu yüzden ayrı bir paket olarak tutulur.
+Hak sahipleri: <https://github.com/Holdi601/3DHeat-Ext-WoT/issues> adresinde
+bir issue açın - hızlı yanıt veririz ve istek üzerine her şeyi kaldırırız.
 
 ## Lisans ve kaynaklar {#licence-and-sources}
 

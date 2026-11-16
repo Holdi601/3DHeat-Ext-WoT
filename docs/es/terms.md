@@ -3,40 +3,26 @@ title: Términos y licencia
 nav_order: 9
 lang: "es"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Términos y licencia {#terms-and-licence}
 
-## Los términos de Wargaming {#wargamings-terms}
+## Qué lee {#what-it-reads}
 
-Leído el 2026-11-07, EULA de Wargaming versión 14 (vigente desde el 10 de abril de 2024, figura
-como la actual):
+El convertidor lee archivos de repetición que el juego escribió en tu propio
+ordenador, después de la batalla y fuera del juego. No cambia nada del juego,
+no habla con ningún servidor y no muestra nada durante una batalla. Nada del
+juego se incluye ni se redistribuye con él: ni recursos del juego, ni código
+del juego, ni DLL. Lo que escribe se queda en tu ordenador.
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): está prohibido "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat no está afiliado a Wargaming ni respaldado por Wargaming. World of
+Tanks y los nombres y marcas relacionados pertenecen a sus propietarios.
 
-La lista de mods prohibidos de World of Tanks trata de la propia batalla: mods que
-"reveal the position of enemies in a way not included in the client", bots de puntería,
-temporizadores de recarga y similares. Ni el EULA ni esa lista mencionan
-las repeticiones.
-
-Lo que hace este convertidor: lee un archivo que escribió el juego, después de la batalla,
-fuera del juego. No cambia nada del juego, no habla con ningún servidor, y no muestra nada
-durante una batalla. Sí descifra el flujo con la clave del juego, que se puede leer como
-cubierta por 5.3 (b) y 12.1 (p). Usarlo es decisión del usuario; por eso es un paquete aparte.
+Titulares de derechos: basta con abrir una incidencia en
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - respondemos rápido y
+retiramos cualquier cosa a petición.
 
 ## Licencia y fuentes {#licence-and-sources}
 

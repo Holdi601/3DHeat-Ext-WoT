@@ -3,24 +3,27 @@ title: "Услови и лиценца"
 nav_order: 9
 lang: "mk"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Услови и лиценца {#terms-and-licence}
 
-## Условите на Wargaming {#wargamings-terms}
+## Што чита {#what-it-reads}
 
-Прочитано на 2026-11-07, Wargaming EULA верзија 14 (во сила од 10 April 2024, наведена како актуелна):
+Конверторот ги чита датотеките со снимки што играта ги запишала на вашиот
+сопствен компјутер, по битката и надвор од играта. Не менува ништо во играта,
+не комуницира со ниту еден сервер и не прикажува ништо за време на битка.
+Ништо од играта не се испорачува ниту се редистрибуира со него: нема ресурси
+на играта, нема код на играта, нема DLL-датотеки. Она што го запишува останува
+на вашиот компјутер.
 
-- 5.3 (b): освен ако не е овластено писмено, не смеете да „... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content“.
-- 12.1 (k): забрането е „Creating, using, making available, or distributing any unauthorized software or tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication between such software and Wargaming.“
-- 12.1 (l): „... any software designed to modify a Product and change the user experience ("mods") unless expressly permitted by Wargaming“.
-- 12.1 (p): „Circumventing or bypassing enforcement and security measures implemented by Wargaming“.
+3DHeat не е поврзан со Wargaming ниту е одобрен од Wargaming. World of Tanks и
+поврзаните имиња и заштитни знаци им припаѓаат на нивните сопственици.
 
-Листата на забранети модови на World of Tanks е за самата битка: модови што „reveal the position of enemies in a way not included in the client“, aim ботови, тајмери за презареддување и слично. Ниту EULA ниту таа листа ги спомнува снимките.
-
-Што прави овој конвертор: чита датотека што ја напишала играта, по битката, надвор од играта. Не менува ништо во играта, не разговара со ниту еден сервер и не прикажува ништо за време на битка. Го дешифрира текот со клучот на играта, што 5.3 (b) и 12.1 (p) може да се прочитаат дека го опфаќаат. Користењето е одлука на корисникот; затоа е одделен пакет.
+Носители на права: отворете issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - одговараме брзо и
+отстрануваме сè на барање.
 
 ## Лиценца и извори {#licence-and-sources}
 

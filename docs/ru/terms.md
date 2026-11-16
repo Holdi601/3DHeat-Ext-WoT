@@ -3,41 +3,26 @@ title: Условия и лицензия
 nav_order: 9
 lang: "ru"
 source: terms.md
-source_hash: "7fb5ea01ecb8"
+source_hash: "52f99a5bfca6"
 nav_exclude: true
 search_exclude: true
 ---
 # Условия и лицензия {#terms-and-licence}
 
-## Условия Wargaming {#wargamings-terms}
+## Что он читает {#what-it-reads}
 
-Прочитано 2026-11-07, Лицензионное соглашение Wargaming (EULA), версия 14 (действует с 10 апреля
-2024, указана как текущая):
+Преобразователь читает файлы реплеев, которые игра записала на вашем
+собственном компьютере, после боя и вне игры. Он ничего не меняет в игре, не
+связывается ни с каким сервером и ничего не показывает во время боя. Ничего из
+игры с ним не поставляется и не распространяется: ни ресурсов игры, ни кода
+игры, ни DLL. То, что он записывает, остаётся на вашем компьютере.
 
-- 5.3 (b): если нет письменного разрешения, нельзя "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): запрещено "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat не связан с Wargaming и не одобрен Wargaming. World of Tanks и
+связанные названия и товарные знаки принадлежат их владельцам.
 
-Список запрещённых модов World of Tanks касается самого боя: моды, которые
-"reveal the position of enemies in a way not included in the client", боты
-прицеливания, таймеры перезарядки и тому подобное. Ни соглашение, ни этот список
-реплеи не упоминают.
-
-Что делает этот преобразователь: он читает файл, который записала игра, после боя,
-вне игры. Он ничего не меняет в игре, не обращается ни к одному серверу и ничего не
-показывает во время боя. Он расшифровывает поток ключом игры, и пункты 5.3 (b) и 12.1 (p)
-можно понимать так, что это под них подпадает. Использовать его — решение пользователя;
-поэтому он выпущен отдельным пакетом.
+Правообладателям: откройте issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoT/issues> - мы быстро отвечаем и по
+запросу удаляем что угодно.
 
 ## Лицензия и источники {#licence-and-sources}
 
