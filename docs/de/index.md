@@ -3,7 +3,7 @@ title: Start
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "cf838ec80038"
+source_hash: "6c8798951f38"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -26,18 +26,32 @@ ist einfaches Parquet und JSON.
 
 ## Schnellstart {#quick-start}
 
+Du brauchst Windows, Python 3.10 oder neuer (im Installer "Add python.exe to PATH"
+ankreuzen) und World of Tanks mit eingeschalteter Gefechtsaufzeichnung (Settings > General > Record battles) (das Spiel speichert dann jedes Gefecht im Ordner
+`replays` seiner Installation); Git ist nicht nötig.
 Neu auf der Kommandozeile? Lies zuerst [Bevor du anfängst](before-you-start.md).
 
 ```bash
-git clone https://github.com/Holdi601/3DHeat-Ext-WoT.git
-cd 3DHeat-Ext-WoT
-pip install -e .
-heat3d-wot-replay "<World of Tanks>/replays" -o out
+python -m pip install https://github.com/Holdi601/3DHeat-Ext-WoT/archive/refs/tags/v0.1.0.zip
+heat3d-wot-replay "C:\Games\World_of_Tanks_EU\replays" -o out
 ```
 
 Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
-`... -> out/<map>/<match>.parquet`. Öffne diese Datei und die daneben liegende
-`<match>.match.json` im 3DHeat-Viewer.
+`... -> out/<map>/<match>.parquet`. Daneben liegen `<match>.match.json` (das
+Match-Dokument) und `<match>.messages.parquet`. Läuft es später noch einmal, werden
+nur die neuen Replays umgewandelt.
+
+Dann öffne die Dateien im [3DHeat-Viewer](https://github.com/Holdi601/3DHeat#quick-start):
+herunterladen (**Code -> Download ZIP**, entpacken), `start.bat` doppelklicken (es bietet
+an, Node.js zu installieren, wenn es fehlt, und öffnet `http://127.0.0.1:5273`), dann
+**Quelle -> Dateien...** und die `<match>.parquet`-Dateien wählen (oder sie auf das
+Quelle-Panel ziehen) für den Heatmap-Tab; für das Gefecht selbst im **Match**-Tab
+**Match-Dateien laden...** und die `<match>.match.json`
+([Match-Analyse](https://holdi601.github.io/3DHeat/match-analysis.html)).
+Alles bleibt auf deinem Rechner.
+
+Wenn ein neues Release erscheint, sagt das Werkzeug es beim Start und bietet an, sich
+selbst zu aktualisieren.
 
 ## Diese Dokumentation {#this-documentation}
 

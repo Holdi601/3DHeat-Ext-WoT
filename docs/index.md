@@ -22,18 +22,32 @@ output is plain Parquet and JSON.
 
 ## Quick start
 
+You need Windows, Python 3.10 or later ("Add python.exe to PATH" ticked in its
+installer) and World of Tanks with battle recording switched on (Settings > General > Record battles) (the game then saves each battle in the
+`replays` folder of its install); no Git.
 New to the command line? Read [Before you start](before-you-start.md) first.
 
 ```bash
-git clone https://github.com/Holdi601/3DHeat-Ext-WoT.git
-cd 3DHeat-Ext-WoT
-pip install -e .
-heat3d-wot-replay "<World of Tanks>/replays" -o out
+python -m pip install https://github.com/Holdi601/3DHeat-Ext-WoT/archive/refs/tags/v0.1.0.zip
+heat3d-wot-replay "C:\Games\World_of_Tanks_EU\replays" -o out
 ```
 
 You should see one line per replay, ending in the file it wrote:
-`... -> out/<map>/<match>.parquet`. Open that file and the
-`<match>.match.json` next to it in the 3DHeat viewer.
+`... -> out/<map>/<match>.parquet`. Next to it are `<match>.match.json` (the
+match document) and `<match>.messages.parquet`. Run it again later and only
+the new replays are converted.
+
+Then open the files in the [3DHeat viewer](https://github.com/Holdi601/3DHeat#quick-start):
+download it (**Code -> Download ZIP**, unpack), double-click `start.bat` (it
+offers to install Node.js when it is missing and opens `http://127.0.0.1:5273`),
+then **Source -> Files...** and pick the `<match>.parquet` files (or drop them on
+the Source panel) for the Heatmap tab; for the battle itself, the **Match** tab's
+**Load match files...** and the `<match>.match.json`
+([Match analysis](https://holdi601.github.io/3DHeat/match-analysis.html)).
+Everything stays on your machine.
+
+When a new release is out, the tool says so when it starts and offers to
+update itself.
 
 ## This documentation
 

@@ -1,13 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.1.0
 
 - `--version` prints the command's name with the version
   (`heat3d-wot-replay 0.1.0`), as the other 3DHeat converters do.
 - Documentation: a page for beginners, a key table for the match document,
   generated reference pages, no real map names or replay figures.
-
-## 0.1.0
 
 - Every vehicle's position, heading, pitch, roll and turret over time; every
   death and kill where it happened.
@@ -15,6 +13,8 @@
   explosions, chat, battle chat commands, camera, the results screen.
 - Nothing lost: the sidecar keeps every item not read whole, and the
   self-check counts each kind.
+- Installs with one pip line from the release zip, no Git needed; a pip install knows its version and updates itself with pip when a newer release is out.
+- README: a quick start for new users.
 
 ## Docs
 
