@@ -1,0 +1,9 @@
+{
+  "spec": "heat3d_ext_wot.standalone_spec",
+  "collect_submodules": ["numpy", "pyarrow"],
+  "platforms": {
+    "windows-x64": {"build": true, "tested": false, "note": "CI builds, tests and smoke-runs; Steam and the launcher's Games folders are searched"},
+    "linux-x64": {"build": true, "tested": false, "note": "CI builds and smoke-runs; Steam (Proton, flatpak, Steam Deck) libraries and ~/Games incl. Wine/Lutris prefixes are searched, or choose the folder"},
+    "macos-arm64": {"build": true, "tested": false, "note": "CI builds and smoke-runs; Steam libraries are searched, or choose the folder"}
+  }
+}

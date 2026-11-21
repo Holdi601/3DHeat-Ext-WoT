@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0
+
+- A standalone program for Windows, Linux (also Steam Deck) and macOS (no Python needed), built by CI with a `SHA256SUMS` file.
+  Without arguments it opens a window: what is found and what is missing, and the conversions as buttons.
+- `status --json` and `--check --json` for the 3DHeat app's Extractors panel; a replay reader has no maps, so
+  `extract` has nothing to do.
+- Updates ask first (update now / later / skip this version) unless automatic updates were chosen
+  (`--auto-update`, the window's checkbox, or `HEAT3D_AUTO_UPDATE=1`).
+- The install is found in Steam libraries on Windows, Linux (native, flatpak, Steam Deck) and macOS, in
+  the launcher's `Games` folders, and in `~/Games` and Wine/Lutris prefixes on Linux.
+
 ## 0.1.0
 
 - `--version` prints the command's name with the version
