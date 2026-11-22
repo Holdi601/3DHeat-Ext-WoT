@@ -14,7 +14,7 @@ from pathlib import Path
 
 from . import __version__
 from .app import paths
-from .app.spec import GameSpec, Input, Spec, Task, game_folders
+from .app.spec import GameSpec, Input, Replays, Spec, Task, game_folders
 
 FOLDER_NAMES = ("World_of_Tanks", "World of Tanks", "World_of_Tanks_EU", "World_of_Tanks_NA", "World_of_Tanks_ASIA",
                 "World_of_Tanks_CT")
@@ -59,6 +59,12 @@ def _replays(levels: Path) -> str:
     game = game_folders(SPEC).get("wot")
     return str(game / "replays") if game and (game / "replays").is_dir() else ""
 
+def _replay_info(path: Path) -> dict:
+    """`info <replay> --json`: the header only (replay_info.py)."""
+    from .replay_info import info
+
+    return info(path)
+
 
 SPEC = Spec(
     id="heat3d-wot",
@@ -79,6 +85,7 @@ SPEC = Spec(
         help="each battle becomes a table and match document the viewer opens",
     )],
     min_free_gb=1.0,
+    replays=Replays("wot", (".wotreplay",), lambda r, out: ["heat3d-wot-replay", str(r), "-o", str(out)], info=_replay_info),
     notice="Not affiliated with or endorsed by Wargaming.",
 )
 
